@@ -1,0 +1,16 @@
+{
+  "name": "tomwilford/design-patterns",
+  "autoload": {
+    "psr-4": {
+      "Creational\\Factory\\Conceptual\\": "creational/Factory/Conceptual"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "TestCase\\Creational\\Factory\\Conceptual\\": "tests/TestCase/Creational/Factory/Conceptual"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^12.1"
+  }
+}
