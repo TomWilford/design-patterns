@@ -2,12 +2,14 @@
   "name": "tomwilford/design-patterns",
   "autoload": {
     "psr-4": {
-      "Creational\\Factory\\Conceptual\\": "creational/Factory/Conceptual"
+      "Creational\\Factory\\Conceptual\\": "creational/Factory/Conceptual",
+      "Creational\\Factory\\Practical\\": "creational/Factory/Practical"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "TestCase\\Creational\\Factory\\Conceptual\\": "tests/TestCase/Creational/Factory/Conceptual"
+      "TestCase\\Creational\\Factory\\Conceptual\\": "tests/TestCase/Creational/Factory/Conceptual",
+      "TestCase\\Creational\\Factory\\Practical\\": "tests/TestCase/Creational/Factory/Practical"
     }
   },
   "require-dev": {
