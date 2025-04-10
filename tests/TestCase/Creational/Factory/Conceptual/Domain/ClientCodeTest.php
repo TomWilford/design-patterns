@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace TestCase\Creational\Factory\Conceptual\Domain;
 
 use Creational\Factory\Conceptual\Domain\ClientCode;
-use Creational\Factory\Conceptual\Module\Product\Creator\Concrete\ConcreteCreatorA;
-use Creational\Factory\Conceptual\Module\Product\Creator\Concrete\ConcreteCreatorB;
+use Creational\Factory\Conceptual\Module\Product\Creator\Concrete\ProductAFactory;
+use Creational\Factory\Conceptual\Module\Product\Creator\Concrete\ProductBFactory;
 use PHPUnit\Framework\Attributes\UsesClass;
 use PHPUnit\Framework\TestCase;
 
@@ -15,19 +15,19 @@ class ClientCodeTest extends TestCase
 {
     public function testConcreteCreatorAReturnsProductAString()
     {
-        $sut = new ClientCode(new ConcreteCreatorA());
+        $sut = new ClientCode(new ProductAFactory());
 
         $this->assertSame(
-            'Creator: Working with Result of ConcreteProductA',
+            'Factory: Working with Result of ConcreteProductA',
             $sut->execute()
         );
     }
 
     public function testConcreteCreateBReturnsProductBString()
     {
-        $sut = new ClientCode(new ConcreteCreatorB());
+        $sut = new ClientCode(new ProductBFactory());
         $this->assertSame(
-            'Creator: Working with Result of ConcreteProductB',
+            'Factory: Working with Result of ConcreteProductB',
             $sut->execute()
         );
     }

@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace Creational\Factory\Conceptual\Domain;
 
-use Creational\Factory\Conceptual\Module\Product\Creator\Abstract\Creator;
+use Creational\Factory\Conceptual\Module\Product\Creator\Abstract\ProductFactory;
 
 readonly class ClientCode
 {
-    public function __construct(private Creator $creator)
+    public function __construct(private ProductFactory $factory)
     {
         //
     }
 
     public function execute(): string
     {
-        return $this->creator->someOperation();
+        return $this->factory->someOperation();
     }
 }
