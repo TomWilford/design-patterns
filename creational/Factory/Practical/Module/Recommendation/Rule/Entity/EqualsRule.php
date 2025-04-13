@@ -9,7 +9,7 @@ use Creational\Factory\Practical\Module\Recommendation\Rule\Interface\Rule;
 class EqualsRule implements Rule
 {
     private string $getter;
-    private string $value;
+    private mixed $value;
 
     public function setEntityGetterToCompare(string $getter): void
     {

@@ -9,7 +9,7 @@ use Creational\Factory\Practical\Module\Recommendation\Rule\Interface\Rule;
 class GreaterThanRule implements Rule
 {
     private string $getter;
-    private int $minimumValue;
+    private mixed $minimumValue;
 
     public function setEntityGetterToCompare(string $getter): void
     {

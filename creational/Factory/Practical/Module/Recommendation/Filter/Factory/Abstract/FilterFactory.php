@@ -2,10 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Creational\Factory\Practical\Module\Recommendation\Filter\Creator\Abstract;
+namespace Creational\Factory\Practical\Module\Recommendation\Filter\Factory\Abstract;
 
 use Creational\Factory\Practical\Module\Recommendation\Filter\Interface\Filter;
-use Creational\Factory\Practical\Module\Recommendation\Rule\Interface\Rule;
 
 abstract class FilterFactory
 {

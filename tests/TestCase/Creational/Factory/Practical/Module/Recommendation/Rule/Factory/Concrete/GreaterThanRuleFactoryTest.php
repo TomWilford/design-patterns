@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace TestCase\Creational\Factory\Practical\Module\Recommendation\Rule\Concrete;
+namespace TestCase\Creational\Factory\Practical\Module\Recommendation\Rule\Factory\Concrete;
 
 use Creational\Factory\Practical\Module\Recommendation\Rule\Entity\GreaterThanRule;
 use Creational\Factory\Practical\Module\Recommendation\Rule\Factory\Concrete\GreaterThanRuleFactory;

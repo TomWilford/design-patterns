@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Creational\Factory\Practical\Module\Recommendation\Filter\Creator\Concrete;
+namespace Creational\Factory\Practical\Module\Recommendation\Filter\Factory\Concrete;
 
-use Creational\Factory\Practical\Module\Recommendation\Filter\Creator\Abstract\FilterFactory;
+use Creational\Factory\Practical\Module\Recommendation\Filter\Factory\Abstract\FilterFactory;
 use Creational\Factory\Practical\Module\Recommendation\Filter\Entity\SingleRuleFilter;
 use Creational\Factory\Practical\Module\Recommendation\Filter\Interface\Filter;
 use Creational\Factory\Practical\Module\Recommendation\Rule\Interface\Rule;

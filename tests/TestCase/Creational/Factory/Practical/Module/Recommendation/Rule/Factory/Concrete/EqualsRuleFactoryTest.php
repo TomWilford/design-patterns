@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace TestCase\Creational\Factory\Practical\Module\Recommendation\Rule\Concrete;
+namespace TestCase\Creational\Factory\Practical\Module\Recommendation\Rule\Factory\Concrete;
 
 use Creational\Factory\Practical\Module\Recommendation\Rule\Entity\EqualsRule;
 use Creational\Factory\Practical\Module\Recommendation\Rule\Factory\Concrete\EqualsRuleFactory;
@@ -13,7 +13,7 @@ use PHPUnit\Framework\TestCase;
 #[UsesClass(EqualsRuleFactory::class)]
 class EqualsRuleFactoryTest extends TestCase
 {
-    public function testRuleInstantiated()
+    public function testRuleInstantiatedSuccessfully()
     {
         $sut = new EqualsRuleFactory('name', 'Baa');
         $rule = $sut->createRule();
@@ -21,7 +21,7 @@ class EqualsRuleFactoryTest extends TestCase
         $this->assertInstanceOf(EqualsRule::class, $rule);
     }
 
-    public function testInstantiatedRuleReturnsFalseForInvalidValue()
+    public function testRuleComparisonReturnsFalseForInvalidValue()
     {
         $entity = new TestEntity(
             1, 'Foo', 400
@@ -33,7 +33,7 @@ class EqualsRuleFactoryTest extends TestCase
         $this->assertFalse($rule->compare($entity));
     }
 
-    public function testInstantiatedRuleReturnsTrueForValidValue()
+    public function testRuleComparisonReturnsTrueForValidValue()
     {
         $entity = new TestEntity(
             1, 'Foo', 400
