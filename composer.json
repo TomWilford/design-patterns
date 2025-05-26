@@ -4,7 +4,8 @@
     "psr-4": {
       "Creational\\Factory\\Conceptual\\": "creational/Factory/Conceptual",
       "Creational\\Factory\\Practical\\": "creational/Factory/Practical",
-      "Creational\\AbstractFactory\\Conceptual\\": "creational/AbstractFactory/Conceptual"
+      "Creational\\AbstractFactory\\Conceptual\\": "creational/AbstractFactory/Conceptual",
+      "Creational\\AbstractFactory\\Practical\\": "creational/AbstractFactory/Practical"
     }
   },
   "autoload-dev": {
@@ -12,7 +13,8 @@
       "Fixtures\\": "tests/Fixtures",
       "TestCase\\Creational\\Factory\\Conceptual\\": "tests/TestCase/Creational/Factory/Conceptual",
       "TestCase\\Creational\\Factory\\Practical\\": "tests/TestCase/Creational/Factory/Practical",
-      "TestCase\\Creational\\AbstractFactory\\Conceptual\\": "tests/TestCase/Creational/AbstractFactory/Conceptual"
+      "TestCase\\Creational\\AbstractFactory\\Conceptual\\": "tests/TestCase/Creational/AbstractFactory/Conceptual",
+      "TestCase\\Creational\\AbstractFactory\\Practical\\": "tests/TestCase/Creational/AbstractFactory/Practical"
     }
   },
   "require-dev": {
