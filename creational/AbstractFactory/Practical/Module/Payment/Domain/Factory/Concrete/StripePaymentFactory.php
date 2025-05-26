@@ -8,6 +8,7 @@ use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Stripe\Str
 use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Stripe\StripeAuthenticationRedirect;
 use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Stripe\StripeRefundProcessor;
 use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Stripe\StripeTransactionHandler;
+use Creational\AbstractFactory\Practical\Module\Payment\Domain\Factory\Base\BasePaymentFactory;
 
 class StripePaymentFactory extends BasePaymentFactory
 {

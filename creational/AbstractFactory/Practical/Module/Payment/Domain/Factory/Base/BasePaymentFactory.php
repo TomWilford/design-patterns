@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Creational\AbstractFactory\Practical\Module\Payment\Domain\Factory\Concrete;
+namespace Creational\AbstractFactory\Practical\Module\Payment\Domain\Factory\Base;
 
 use Creational\AbstractFactory\Practical\Infrastructure\Logger;
 use Creational\AbstractFactory\Practical\Module\Payment\Domain\Factory\Interface\PaymentFactory;

@@ -8,6 +8,7 @@ use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\PayPal\Pay
 use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\PayPal\PayPalAuthenticationRedirect;
 use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\PayPal\PayPalRefundProcessor;
 use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\PayPal\PayPalTransactionHandler;
+use Creational\AbstractFactory\Practical\Module\Payment\Domain\Factory\Base\BasePaymentFactory;
 
 class PayPalPaymentFactory extends BasePaymentFactory
 {

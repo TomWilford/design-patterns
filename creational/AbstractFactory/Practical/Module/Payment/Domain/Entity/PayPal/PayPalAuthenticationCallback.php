@@ -10,7 +10,7 @@ class PayPalAuthenticationCallback extends BaseAuthenticationCallback
 {
     private string $secret;
 
-    public function setSecret(string $secret): void
+    public function setMfaCode(string $secret): void
     {
         $this->secret = $secret;
     }

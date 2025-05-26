@@ -54,7 +54,7 @@ class AuthenticationCallbackActionTest extends TestCase
     public function testProcessCallbackSuccessfullyCalledWithSecretForPayPalGateway()
     {
         $callback = $this->createMock(PayPalAuthenticationCallback::class);
-        $callback->expects($this->once())->method('setSecret')
+        $callback->expects($this->once())->method('setMfaCode')
             ->with('abc123');
         $callback->expects($this->once())->method('processCallback');
         $factory = $this->createMock(PayPalPaymentFactory::class);

@@ -27,7 +27,7 @@ final readonly class AuthenticationCallbackAction
                 $callbackHandler->setToken($arguments['token']);
                 break;
             case $callbackHandler instanceof PayPalAuthenticationCallback:
-                $callbackHandler->setSecret($arguments['secret']);
+                $callbackHandler->setMfaCode($arguments['secret']);
                 break;
         }
         $callbackHandler->processCallback();
