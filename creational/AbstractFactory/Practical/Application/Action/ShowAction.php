@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Creational\AbstractFactory\Practical\Application\Action;
+namespace creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Application\Action;
 
-use Creational\AbstractFactory\Practical\Domain\Os\Os;
-use Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Factory\Resolver\UiFactoryResolver;
-use Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Render\RenderUi;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Domain\Os\Os;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\UserInterface\Domain\Factory\Resolver\UiFactoryResolver;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\UserInterface\Domain\Render\RenderUi;
 
 readonly class ShowAction
 {

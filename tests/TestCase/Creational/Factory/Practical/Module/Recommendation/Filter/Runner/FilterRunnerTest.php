@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TestCase\Creational\Factory\Practical\Module\Recommendation\Filter\Runner;
 
-use Creational\Factory\Practical\Module\Recommendation\Filter\Runner\FilterRunner;
-use Creational\Factory\Practical\Module\Recommendation\Rule\Factory\Concrete\EqualsRuleFactory;
+use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Filter\Runner\FilterRunner;
+use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Rule\Factory\Concrete\EqualsRuleFactory;
 use Fixtures\TestEntity;
 use PHPUnit\Framework\TestCase;
 

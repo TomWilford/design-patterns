@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Bitcoin;
+namespace creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Entity\Bitcoin;
 
-use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Base\BaseAuthenticationRedirect;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Entity\Base\BaseAuthenticationRedirect;
 
 class BitcoinAuthenticationRedirect extends BaseAuthenticationRedirect
 {

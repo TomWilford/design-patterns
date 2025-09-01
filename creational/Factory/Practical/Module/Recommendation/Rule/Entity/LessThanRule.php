@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Creational\Factory\Practical\Module\Recommendation\Rule\Entity;
+namespace creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Rule\Entity;
 
-use Creational\Factory\Practical\Module\Recommendation\Rule\Interface\Rule;
+use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Rule\Interface\Rule;
 
 class LessThanRule implements Rule
 {

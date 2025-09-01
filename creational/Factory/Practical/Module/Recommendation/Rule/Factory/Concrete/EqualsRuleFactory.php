@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Creational\Factory\Practical\Module\Recommendation\Rule\Factory\Concrete;
+namespace creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Rule\Factory\Concrete;
 
-use Creational\Factory\Practical\Module\Recommendation\Rule\Entity\EqualsRule;
-use Creational\Factory\Practical\Module\Recommendation\Rule\Factory\Abstract\RuleFactory;
-use Creational\Factory\Practical\Module\Recommendation\Rule\Interface\Rule;
+use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Rule\Entity\EqualsRule;
+use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Rule\Factory\Abstract\RuleFactory;
+use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Rule\Interface\Rule;
 
 class EqualsRuleFactory extends RuleFactory
 {

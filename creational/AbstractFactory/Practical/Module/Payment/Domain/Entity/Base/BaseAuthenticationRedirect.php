@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Base;
+namespace creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Entity\Base;
 
-use Creational\AbstractFactory\Practical\Infrastructure\Logger;
-use Creational\AbstractFactory\Practical\Module\Payment\Domain\Interface\AuthenticationRedirect;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Infrastructure\Logger;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Interface\AuthenticationRedirect;
 
 abstract class BaseAuthenticationRedirect implements AuthenticationRedirect
 {

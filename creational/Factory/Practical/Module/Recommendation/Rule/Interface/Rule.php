@@ -1,6 +1,6 @@
 <?php
 
-namespace Creational\Factory\Practical\Module\Recommendation\Rule\Interface;
+namespace creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Rule\Interface;
 
 interface Rule
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Creational\AbstractFactory\Practical\Module\Payment\Domain\Interface;
+namespace creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Interface;
 
-use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Payment\Payment;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Entity\Payment\Payment;
 
 interface RefundProcessor
 {

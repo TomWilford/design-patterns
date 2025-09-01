@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace TestCase\Creational\AbstractFactory\Practical\Application\Action;
 
-use Creational\AbstractFactory\Practical\Application\Action\ShowAction;
-use Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Entity\Button\MacButton;
-use Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Entity\Button\WindowsButton;
-use Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Entity\Checkbox\MacCheckbox;
-use Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Entity\Checkbox\WindowsCheckbox;
-use Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Factory\Concrete\MacFactory;
-use Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Factory\Concrete\WindowsFactory;
-use Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Factory\Resolver\UiFactoryResolver;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Application\Action\ShowAction;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\UserInterface\Domain\Entity\Button\MacButton;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\UserInterface\Domain\Entity\Button\WindowsButton;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\UserInterface\Domain\Entity\Checkbox\MacCheckbox;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\UserInterface\Domain\Entity\Checkbox\WindowsCheckbox;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\UserInterface\Domain\Factory\Concrete\MacFactory;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\UserInterface\Domain\Factory\Concrete\WindowsFactory;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\UserInterface\Domain\Factory\Resolver\UiFactoryResolver;
 use PHPUnit\Framework\TestCase;
 
 class ShowActionTest extends TestCase

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Creational\AbstractFactory\Conceptual\Domain;
+namespace creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Conceptual\Domain;
 
-use Creational\AbstractFactory\Conceptual\Module\Product\Factory\Interface\AbstractFactory;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Conceptual\Module\Product\Factory\Interface\AbstractFactory;
 
 readonly class ClientCode
 {

@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace TestCase\Creational\AbstractFactory\Practical\Module\Application\Action;
 
-use Creational\AbstractFactory\Practical\Application\Exception\NotFoundException;
-use Creational\AbstractFactory\Practical\Module\Payment\Application\Action\RefundConfirmProcessAction;
-use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Gateway\Gateway;
-use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Payment\Payment;
-use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Stripe\StripeRefundProcessor;
-use Creational\AbstractFactory\Practical\Module\Payment\Domain\Factory\Concrete\StripePaymentFactory;
-use Creational\AbstractFactory\Practical\Module\Payment\Domain\Factory\Registry\PaymentFactoryRegistry;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Application\Exception\NotFoundException;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Application\Action\RefundConfirmProcessAction;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Entity\Gateway\Gateway;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Entity\Payment\Payment;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Entity\Stripe\StripeRefundProcessor;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Factory\Concrete\StripePaymentFactory;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Factory\Registry\PaymentFactoryRegistry;
 use PHPUnit\Framework\TestCase;
 
 class RefundConfirmProcessActionTest extends TestCase

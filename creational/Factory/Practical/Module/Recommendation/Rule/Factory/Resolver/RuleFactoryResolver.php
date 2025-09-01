@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Creational\Factory\Practical\Module\Recommendation\Rule\Factory\Resolver;
+namespace creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Rule\Factory\Resolver;
 
-use Creational\Factory\Practical\Module\Recommendation\Filter\Exception\InvalidFilterMethodException;
-use Creational\Factory\Practical\Module\Recommendation\Rule\Factory\Abstract\RuleFactory;
-use Creational\Factory\Practical\Module\Recommendation\Rule\Factory\Concrete\EqualsRuleFactory;
-use Creational\Factory\Practical\Module\Recommendation\Rule\Factory\Concrete\GreaterThanRuleFactory;
-use Creational\Factory\Practical\Module\Recommendation\Rule\Factory\Concrete\LessThanRuleFactory;
-use Creational\Factory\Practical\Module\Recommendation\Rule\Interface\Rule;
+use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Filter\Exception\InvalidFilterMethodException;
+use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Rule\Factory\Abstract\RuleFactory;
+use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Rule\Factory\Concrete\EqualsRuleFactory;
+use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Rule\Factory\Concrete\GreaterThanRuleFactory;
+use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Rule\Factory\Concrete\LessThanRuleFactory;
+use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Rule\Interface\Rule;
 
 readonly class RuleFactoryResolver
 {

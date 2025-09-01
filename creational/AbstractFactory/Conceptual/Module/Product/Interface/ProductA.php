@@ -1,6 +1,6 @@
 <?php
 
-namespace Creational\AbstractFactory\Conceptual\Module\Product\Interface;
+namespace creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Conceptual\Module\Product\Interface;
 
 interface ProductA
 {

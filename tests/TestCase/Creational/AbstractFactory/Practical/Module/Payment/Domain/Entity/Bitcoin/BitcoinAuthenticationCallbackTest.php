@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TestCase\Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Bitcoin;
 
-use Creational\AbstractFactory\Practical\Infrastructure\Logger;
-use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Bitcoin\BitcoinAuthenticationCallback;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Infrastructure\Logger;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Entity\Bitcoin\BitcoinAuthenticationCallback;
 use PHPUnit\Framework\TestCase;
 
 class BitcoinAuthenticationCallbackTest extends TestCase

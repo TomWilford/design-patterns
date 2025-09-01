@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Creational\Factory\Practical\Module\Notification\Domain\Creator\Abstract;
+namespace creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Notification\Domain\Creator\Abstract;
 
-use Creational\Factory\Practical\Domain\Exception\NotificationDispatchException;
-use Creational\Factory\Practical\Infrastructure\Logger;
-use Creational\Factory\Practical\Module\Notification\Domain\Interface\Notifier;
+use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Domain\Exception\NotificationDispatchException;
+use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Infrastructure\Logger;
+use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Notification\Domain\Interface\Notifier;
 
 abstract class NotificationFactory
 {

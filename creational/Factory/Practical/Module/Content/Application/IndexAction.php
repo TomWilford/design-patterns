@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Creational\Factory\Practical\Module\Content\Application;
+namespace creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Content\Application;
 
-use Creational\Factory\Practical\Module\Recommendation\Filter\Runner\FilterRunner;
-use Creational\Factory\Practical\Module\Recommendation\Rule\Factory\Resolver\RuleFactoryResolver;
-use Creational\Factory\Practical\Module\Recommendation\Rule\Interface\Rule;
+use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Filter\Runner\FilterRunner;
+use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Rule\Factory\Resolver\RuleFactoryResolver;
+use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Rule\Interface\Rule;
 
 class IndexAction
 {

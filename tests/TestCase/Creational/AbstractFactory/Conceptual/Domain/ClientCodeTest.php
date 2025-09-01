@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace TestCase\Creational\AbstractFactory\Conceptual\Domain;
 
-use Creational\AbstractFactory\Conceptual\Domain\ClientCode;
-use Creational\AbstractFactory\Conceptual\Module\Product\Factory\Concrete\ConcreteFactory1;
-use Creational\AbstractFactory\Conceptual\Module\Product\Factory\Concrete\ConcreteFactory2;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Conceptual\Domain\ClientCode;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Conceptual\Module\Product\Factory\Concrete\ConcreteFactory1;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Conceptual\Module\Product\Factory\Concrete\ConcreteFactory2;
 use PHPUnit\Framework\TestCase;
 
 class ClientCodeTest extends TestCase

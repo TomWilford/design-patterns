@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace TestCase\Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Stripe;
 
-use Creational\AbstractFactory\Practical\Infrastructure\Logger;
-use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Payment\Payment;
-use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Stripe\StripeTransactionHandler;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Infrastructure\Logger;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Entity\Payment\Payment;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Entity\Stripe\StripeTransactionHandler;
 use PHPUnit\Framework\TestCase;
 
 class StripeTransactionHandlerTest extends TestCase

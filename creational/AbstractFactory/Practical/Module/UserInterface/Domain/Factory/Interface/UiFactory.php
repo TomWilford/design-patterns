@@ -1,9 +1,9 @@
 <?php
 
-namespace Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Factory\Interface;
+namespace creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\UserInterface\Domain\Factory\Interface;
 
-use Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Interface\Button;
-use Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Interface\Checkbox;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\UserInterface\Domain\Interface\Button;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\UserInterface\Domain\Interface\Checkbox;
 
 interface UiFactory
 {

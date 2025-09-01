@@ -1,9 +1,9 @@
 <?php
 
-namespace Creational\AbstractFactory\Conceptual\Module\Product\Factory\Interface;
+namespace creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Conceptual\Module\Product\Factory\Interface;
 
-use Creational\AbstractFactory\Conceptual\Module\Product\Interface\ProductA;
-use Creational\AbstractFactory\Conceptual\Module\Product\Interface\ProductB;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Conceptual\Module\Product\Interface\ProductA;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Conceptual\Module\Product\Interface\ProductB;
 
 interface AbstractFactory
 {

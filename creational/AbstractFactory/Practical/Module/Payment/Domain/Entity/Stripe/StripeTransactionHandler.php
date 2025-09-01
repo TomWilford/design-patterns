@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Stripe;
+namespace creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Entity\Stripe;
 
-use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Base\BaseTransactionHandler;
-use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Payment\Payment;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Entity\Base\BaseTransactionHandler;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Entity\Payment\Payment;
 
 class StripeTransactionHandler extends BaseTransactionHandler
 {

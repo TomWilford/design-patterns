@@ -1,6 +1,6 @@
 <?php
 
-namespace Creational\Factory\Practical\Module\Content\Enum;
+namespace creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Content\Enum;
 
 enum Type
 {

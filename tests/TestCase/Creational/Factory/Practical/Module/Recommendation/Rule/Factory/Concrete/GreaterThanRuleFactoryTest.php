@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TestCase\Creational\Factory\Practical\Module\Recommendation\Rule\Factory\Concrete;
 
-use Creational\Factory\Practical\Module\Recommendation\Rule\Entity\GreaterThanRule;
-use Creational\Factory\Practical\Module\Recommendation\Rule\Factory\Concrete\GreaterThanRuleFactory;
+use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Rule\Entity\GreaterThanRule;
+use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Rule\Factory\Concrete\GreaterThanRuleFactory;
 use Fixtures\TestEntity;
 use PHPUnit\Framework\TestCase;
 

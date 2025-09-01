@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Stripe;
+namespace creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Entity\Stripe;
 
-use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Base\BaseAuthenticationCallback;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Entity\Base\BaseAuthenticationCallback;
 
 class StripeAuthenticationCallback extends BaseAuthenticationCallback
 {

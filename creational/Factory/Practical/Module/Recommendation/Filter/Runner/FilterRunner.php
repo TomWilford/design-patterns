@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Creational\Factory\Practical\Module\Recommendation\Filter\Runner;
+namespace creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Filter\Runner;
 
-use Creational\Factory\Practical\Module\Recommendation\Filter\Factory\Concrete\MultipleRuleFilterFactory;
-use Creational\Factory\Practical\Module\Recommendation\Filter\Factory\Concrete\SingleRuleFilterFactory;
-use Creational\Factory\Practical\Module\Recommendation\Rule\Interface\Rule;
+use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Filter\Factory\Concrete\MultipleRuleFilterFactory;
+use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Filter\Factory\Concrete\SingleRuleFilterFactory;
+use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Rule\Interface\Rule;
 
 readonly class FilterRunner
 {

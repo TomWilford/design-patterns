@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Creational\Factory\Practical\Module\Notification\Domain\Entity;
+namespace creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Notification\Domain\Entity;
 
-use Creational\Factory\Practical\Infrastructure\Logger;
-use Creational\Factory\Practical\Module\Notification\Domain\Interface\Notifier;
+use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Infrastructure\Logger;
+use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Notification\Domain\Interface\Notifier;
 
 class EmailNotifier implements Notifier
 {

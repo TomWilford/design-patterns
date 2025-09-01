@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Creational\AbstractFactory\Practical\Module\Payment\Application\Action;
+namespace creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Application\Action;
 
-use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Gateway\Gateway;
-use Creational\AbstractFactory\Practical\Module\Payment\Domain\Factory\Registry\PaymentFactoryRegistry;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Entity\Gateway\Gateway;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Factory\Registry\PaymentFactoryRegistry;
 
 final readonly class CheckoutProcessAction
 {

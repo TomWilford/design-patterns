@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Creational\Factory\Conceptual\Module\Product\Creator\Concrete;
+namespace creational\Singleton\Practical\Application\FeatureFlag\Factory\Conceptual\Module\Product\Creator\Concrete;
 
-use Creational\Factory\Conceptual\Module\Product\Creator\Abstract\ProductFactory;
-use Creational\Factory\Conceptual\Module\Product\Entity\ConcreteProductB;
-use Creational\Factory\Conceptual\Module\Product\Interface\Product;
+use creational\Singleton\Practical\Application\FeatureFlag\Factory\Conceptual\Module\Product\Creator\Abstract\ProductFactory;
+use creational\Singleton\Practical\Application\FeatureFlag\Factory\Conceptual\Module\Product\Entity\ConcreteProductB;
+use creational\Singleton\Practical\Application\FeatureFlag\Factory\Conceptual\Module\Product\Interface\Product;
 
 class ProductBFactory extends ProductFactory
 {

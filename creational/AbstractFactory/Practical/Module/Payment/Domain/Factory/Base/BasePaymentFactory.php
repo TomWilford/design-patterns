@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Creational\AbstractFactory\Practical\Module\Payment\Domain\Factory\Base;
+namespace creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Factory\Base;
 
-use Creational\AbstractFactory\Practical\Infrastructure\Logger;
-use Creational\AbstractFactory\Practical\Module\Payment\Domain\Factory\Interface\PaymentFactory;
-use Creational\AbstractFactory\Practical\Module\Payment\Domain\Interface\AuthenticationCallback;
-use Creational\AbstractFactory\Practical\Module\Payment\Domain\Interface\AuthenticationRedirect;
-use Creational\AbstractFactory\Practical\Module\Payment\Domain\Interface\RefundProcessor;
-use Creational\AbstractFactory\Practical\Module\Payment\Domain\Interface\TransactionHandler;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Infrastructure\Logger;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Factory\Interface\PaymentFactory;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Interface\AuthenticationCallback;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Interface\AuthenticationRedirect;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Interface\RefundProcessor;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Interface\TransactionHandler;
 
 abstract class BasePaymentFactory implements PaymentFactory
 {

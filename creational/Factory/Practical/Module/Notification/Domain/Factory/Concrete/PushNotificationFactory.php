@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Creational\Factory\Practical\Module\Notification\Domain\Creator\Concrete;
+namespace creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Notification\Domain\Creator\Concrete;
 
-use Creational\Factory\Practical\Module\Notification\Domain\Creator\Abstract\NotificationFactory;
-use Creational\Factory\Practical\Module\Notification\Domain\Entity\PushNotifier;
-use Creational\Factory\Practical\Module\Notification\Domain\Interface\Notifier;
+use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Notification\Domain\Creator\Abstract\NotificationFactory;
+use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Notification\Domain\Entity\PushNotifier;
+use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Notification\Domain\Interface\Notifier;
 
 class PushNotificationFactory extends NotificationFactory
 {

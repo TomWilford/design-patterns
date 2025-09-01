@@ -1,11 +1,11 @@
 <?php
 
-namespace Creational\AbstractFactory\Practical\Module\Payment\Domain\Factory\Interface;
+namespace creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Factory\Interface;
 
-use Creational\AbstractFactory\Practical\Module\Payment\Domain\Interface\AuthenticationCallback;
-use Creational\AbstractFactory\Practical\Module\Payment\Domain\Interface\AuthenticationRedirect;
-use Creational\AbstractFactory\Practical\Module\Payment\Domain\Interface\RefundProcessor;
-use Creational\AbstractFactory\Practical\Module\Payment\Domain\Interface\TransactionHandler;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Interface\AuthenticationCallback;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Interface\AuthenticationRedirect;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Interface\RefundProcessor;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Interface\TransactionHandler;
 
 interface PaymentFactory
 {

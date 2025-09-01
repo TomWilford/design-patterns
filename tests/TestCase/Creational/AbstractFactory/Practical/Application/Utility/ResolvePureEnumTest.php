@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TestCase\Creational\AbstractFactory\Practical\Application\Utility;
 
-use Creational\AbstractFactory\Practical\Application\Exception\NotFoundException;
-use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Gateway\Gateway;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Application\Exception\NotFoundException;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Entity\Gateway\Gateway;
 use PHPUnit\Framework\TestCase;
 
 class ResolvePureEnumTest extends TestCase

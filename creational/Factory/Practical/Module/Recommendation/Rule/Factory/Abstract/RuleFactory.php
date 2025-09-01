@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Creational\Factory\Practical\Module\Recommendation\Rule\Factory\Abstract;
+namespace creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Rule\Factory\Abstract;
 
-use Creational\Factory\Practical\Module\Recommendation\Rule\Interface\Rule;
+use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Rule\Interface\Rule;
 
 abstract class RuleFactory
 {

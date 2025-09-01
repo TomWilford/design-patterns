@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace TestCase\Creational\Factory\Practical\Module\Content\Application;
 
-use Creational\Factory\Practical\Module\Content\Application\IndexAction;
-use Creational\Factory\Practical\Module\Recommendation\Filter\Exception\InvalidFilterMethodException;
-use Creational\Factory\Practical\Module\Recommendation\Filter\Runner\FilterRunner;
-use Creational\Factory\Practical\Module\Recommendation\Rule\Factory\Resolver\RuleFactoryResolver;
+use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Content\Application\IndexAction;
+use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Filter\Exception\InvalidFilterMethodException;
+use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Filter\Runner\FilterRunner;
+use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Rule\Factory\Resolver\RuleFactoryResolver;
 use Fixtures\TestEntity;
 use PHPUnit\Framework\TestCase;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Interface;
+namespace creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\UserInterface\Domain\Interface;
 
 interface Checkbox
 {

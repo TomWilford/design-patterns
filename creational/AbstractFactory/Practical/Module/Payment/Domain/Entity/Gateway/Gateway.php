@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Gateway;
+namespace creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Entity\Gateway;
 
-use Creational\AbstractFactory\Practical\Application\Utility\Enum\ResolvePureEnum;
+use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Application\Utility\Enum\ResolvePureEnum;
 
 enum Gateway
 {
