@@ -7,7 +7,8 @@
       "Creational\\AbstractFactory\\Conceptual\\": "creational/AbstractFactory/Conceptual",
       "Creational\\AbstractFactory\\Practical\\": "creational/AbstractFactory/Practical",
       "Creational\\Singleton\\Conceptual\\": "creational/Singleton/Conceptual",
-      "Creational\\Singleton\\Practical\\": "creational/Singleton/Practical"
+      "Creational\\Singleton\\Practical\\": "creational/Singleton/Practical",
+      "Creational\\Builder\\Conceptual\\": "creational/Builder/Conceptual"
     }
   },
   "autoload-dev": {

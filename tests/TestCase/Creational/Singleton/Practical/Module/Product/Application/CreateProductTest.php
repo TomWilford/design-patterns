@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace TestCase\Creational\Singleton\Conceptual\Product\Application;
+namespace TestCase\Creational\Singleton\Practical\Module\Product\Application;
 
 use Creational\Singleton\Practical\Application\FeatureFlag\FeatureFlagKey;
 use Creational\Singleton\Practical\Application\FeatureFlag\FeatureFlagManager;
 use Creational\Singleton\Practical\Infrastructure\Log\Logger;
-use Creational\Singleton\Practical\Product\Application\CreateProductAction;
+use Creational\Singleton\Practical\Module\Product\Application\CreateProductAction;
 use PHPUnit\Framework\TestCase;
 
 class CreateProductTest extends TestCase

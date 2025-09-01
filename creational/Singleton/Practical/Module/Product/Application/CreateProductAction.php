@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Creational\Singleton\Practical\Product\Application;
+namespace Creational\Singleton\Practical\Module\Product\Application;
 
 use Creational\Singleton\Practical\Application\FeatureFlag\FeatureFlagKey;
 use Creational\Singleton\Practical\Application\FeatureFlag\FeatureFlagManager;
