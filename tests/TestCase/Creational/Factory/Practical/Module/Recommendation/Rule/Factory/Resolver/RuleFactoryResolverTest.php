@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace TestCase\Creational\Factory\Practical\Module\Recommendation\Rule\Factory\Resolver;
 
-use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Rule\Entity\EqualsRule;
-use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Rule\Entity\GreaterThanRule;
-use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Rule\Factory\Abstract\RuleFactory;
-use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Rule\Factory\Resolver\RuleFactoryResolver;
-use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Rule\Interface\Rule;
+use Creational\Factory\Practical\Module\Recommendation\Rule\Entity\EqualsRule;
+use Creational\Factory\Practical\Module\Recommendation\Rule\Entity\GreaterThanRule;
+use Creational\Factory\Practical\Module\Recommendation\Rule\Factory\Abstract\RuleFactory;
+use Creational\Factory\Practical\Module\Recommendation\Rule\Factory\Resolver\RuleFactoryResolver;
+use Creational\Factory\Practical\Module\Recommendation\Rule\Interface\Rule;
 use PHPUnit\Framework\TestCase;
 
 class RuleFactoryResolverTest extends TestCase

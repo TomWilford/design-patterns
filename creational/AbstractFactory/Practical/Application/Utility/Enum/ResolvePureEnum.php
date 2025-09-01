@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Application\Utility\Enum;
+namespace Creational\AbstractFactory\Practical\Application\Utility\Enum;
 
-use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Application\Exception\NotFoundException;
+use Creational\AbstractFactory\Practical\Application\Exception\NotFoundException;
 
 trait ResolvePureEnum
 {

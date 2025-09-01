@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\UserInterface\Domain\Factory\Concrete;
+namespace Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Factory\Concrete;
 
-use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\UserInterface\Domain\Entity\Button\WindowsButton;
-use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\UserInterface\Domain\Entity\Checkbox\WindowsCheckbox;
-use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\UserInterface\Domain\Factory\Interface\UiFactory;
+use Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Entity\Button\WindowsButton;
+use Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Entity\Checkbox\WindowsCheckbox;
+use Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Factory\Interface\UiFactory;
 
 class WindowsFactory implements UiFactory
 {

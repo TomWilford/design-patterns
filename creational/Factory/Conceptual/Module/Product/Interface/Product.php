@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace creational\Singleton\Practical\Application\FeatureFlag\Factory\Conceptual\Module\Product\Interface;
+namespace Creational\Factory\Conceptual\Module\Product\Interface;
 
 interface Product
 {

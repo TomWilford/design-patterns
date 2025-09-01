@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Entity\PayPal;
+namespace Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\PayPal;
 
-use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Entity\Base\BaseRefundProcessor;
-use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Entity\Payment\Payment;
+use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Base\BaseRefundProcessor;
+use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Payment\Payment;
 
 class PayPalRefundProcessor extends BaseRefundProcessor
 {

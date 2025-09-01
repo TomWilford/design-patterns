@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace TestCase\Creational\AbstractFactory\Practical\Domain\Utility;
 
-use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\UserInterface\Domain\Factory\Interface\UiFactory;
-use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\UserInterface\Domain\Interface\Button;
-use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\UserInterface\Domain\Interface\Checkbox;
-use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\UserInterface\Domain\Render\RenderUi;
+use Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Factory\Interface\UiFactory;
+use Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Interface\Button;
+use Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Interface\Checkbox;
+use Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Render\RenderUi;
 use PHPUnit\Framework\TestCase;
 
 class RenderUiTest extends TestCase

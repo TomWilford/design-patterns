@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Rule\Entity;
+namespace Creational\Factory\Practical\Module\Recommendation\Rule\Entity;
 
-use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Rule\Interface\Rule;
+use Creational\Factory\Practical\Module\Recommendation\Rule\Interface\Rule;
 
 class GreaterThanRule implements Rule
 {

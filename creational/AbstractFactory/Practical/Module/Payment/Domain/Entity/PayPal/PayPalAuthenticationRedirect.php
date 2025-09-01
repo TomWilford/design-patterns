@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Entity\PayPal;
+namespace Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\PayPal;
 
-use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Entity\Base\BaseAuthenticationRedirect;
+use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Base\BaseAuthenticationRedirect;
 
 class PayPalAuthenticationRedirect extends BaseAuthenticationRedirect
 {

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\UserInterface\Domain\Factory\Concrete;
+namespace Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Factory\Concrete;
 
-use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\UserInterface\Domain\Entity\Button\MacButton;
-use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\UserInterface\Domain\Entity\Checkbox\MacCheckbox;
-use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\UserInterface\Domain\Factory\Interface\UiFactory;
+use Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Entity\Button\MacButton;
+use Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Entity\Checkbox\MacCheckbox;
+use Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Factory\Interface\UiFactory;
 
 class MacFactory implements UiFactory
 {

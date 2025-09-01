@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\UserInterface\Domain\Factory\Resolver;
+namespace Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Factory\Resolver;
 
-use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Domain\Os\Os;
-use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\UserInterface\Domain\Factory\Concrete\MacFactory;
-use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\UserInterface\Domain\Factory\Concrete\WindowsFactory;
-use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\UserInterface\Domain\Factory\Interface\UiFactory;
+use Creational\AbstractFactory\Practical\Domain\Os\Os;
+use Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Factory\Concrete\MacFactory;
+use Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Factory\Concrete\WindowsFactory;
+use Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Factory\Interface\UiFactory;
 
 class UiFactoryResolver
 {

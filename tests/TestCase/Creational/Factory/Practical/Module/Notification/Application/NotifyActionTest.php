@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace TestCase\Creational\Factory\Practical\Module\Notification\Application;
 
-use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Domain\Exception\NotificationDispatchException;
-use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Infrastructure\Logger;
-use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Notification\Application\NotifyAction;
-use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Notification\Domain\Creator\Abstract\NotificationFactory;
-use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Notification\Domain\Creator\Concrete\EmailNotificationFactory;
-use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Notification\Domain\Creator\Concrete\PushNotificationFactory;
-use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Notification\Domain\Creator\Concrete\SmsNotificationFactory;
-use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Notification\Domain\Interface\Notifier;
+use Creational\Factory\Practical\Domain\Exception\NotificationDispatchException;
+use Creational\Factory\Practical\Infrastructure\Logger;
+use Creational\Factory\Practical\Module\Notification\Application\NotifyAction;
+use Creational\Factory\Practical\Module\Notification\Domain\Factory\Abstract\NotificationFactory;
+use Creational\Factory\Practical\Module\Notification\Domain\Factory\Concrete\EmailNotificationFactory;
+use Creational\Factory\Practical\Module\Notification\Domain\Factory\Concrete\PushNotificationFactory;
+use Creational\Factory\Practical\Module\Notification\Domain\Factory\Concrete\SmsNotificationFactory;
+use Creational\Factory\Practical\Module\Notification\Domain\Interface\Notifier;
 use PHPUnit\Framework\Attributes\UsesClass;
 use PHPUnit\Framework\Attributes\UsesClassesThatImplementInterface;
 use PHPUnit\Framework\TestCase;

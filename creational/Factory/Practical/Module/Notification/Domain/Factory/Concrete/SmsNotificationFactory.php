@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Notification\Domain\Creator\Concrete;
+namespace Creational\Factory\Practical\Module\Notification\Domain\Factory\Concrete;
 
-use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Notification\Domain\Creator\Abstract\NotificationFactory;
-use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Notification\Domain\Entity\SmsNotifier;
-use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Notification\Domain\Interface\Notifier;
+use Creational\Factory\Practical\Module\Notification\Domain\Factory\Abstract\NotificationFactory;
+use Creational\Factory\Practical\Module\Notification\Domain\Entity\SmsNotifier;
+use Creational\Factory\Practical\Module\Notification\Domain\Interface\Notifier;
 
 class SmsNotificationFactory extends NotificationFactory
 {

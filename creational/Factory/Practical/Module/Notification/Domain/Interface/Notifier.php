@@ -1,8 +1,8 @@
 <?php
 
-namespace creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Notification\Domain\Interface;
+namespace Creational\Factory\Practical\Module\Notification\Domain\Interface;
 
-use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Domain\Exception\NotificationDispatchException;
+use Creational\Factory\Practical\Domain\Exception\NotificationDispatchException;
 
 interface Notifier
 {

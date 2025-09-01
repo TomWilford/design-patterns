@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace creational\Singleton\Practical\Application\FeatureFlag\Factory\Conceptual\Module\Product\Creator\Abstract;
+namespace Creational\Factory\Conceptual\Module\Product\Factory\Abstract;
 
-use creational\Singleton\Practical\Application\FeatureFlag\Factory\Conceptual\Module\Product\Interface\Product;
+use Creational\Factory\Conceptual\Module\Product\Interface\Product;
 
 abstract class ProductFactory
 {

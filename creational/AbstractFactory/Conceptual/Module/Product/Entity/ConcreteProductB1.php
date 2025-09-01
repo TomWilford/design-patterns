@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Conceptual\Module\Product\Entity;
+namespace Creational\AbstractFactory\Conceptual\Module\Product\Entity;
 
-use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Conceptual\Module\Product\Interface\ProductB;
+use Creational\AbstractFactory\Conceptual\Module\Product\Interface\ProductB;
 
 class ConcreteProductB1 implements ProductB
 {

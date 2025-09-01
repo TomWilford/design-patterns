@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace TestCase\Creational\Factory\Practical\Module\Recommendation\Rule\Factory\Concrete;
 
-use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Rule\Entity\EqualsRule;
-use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Rule\Factory\Concrete\EqualsRuleFactory;
+use Creational\Factory\Practical\Module\Recommendation\Rule\Entity\EqualsRule;
+use Creational\Factory\Practical\Module\Recommendation\Rule\Factory\Concrete\EqualsRuleFactory;
 use Fixtures\TestEntity;
 use PHPUnit\Framework\Attributes\UsesClass;
 use PHPUnit\Framework\TestCase;

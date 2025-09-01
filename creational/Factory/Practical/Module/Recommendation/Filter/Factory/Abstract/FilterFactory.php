@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Filter\Factory\Abstract;
+namespace Creational\Factory\Practical\Module\Recommendation\Filter\Factory\Abstract;
 
-use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Filter\Interface\Filter;
+use Creational\Factory\Practical\Module\Recommendation\Filter\Interface\Filter;
 
 abstract class FilterFactory
 {

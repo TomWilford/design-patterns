@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Filter\Interface;
+namespace Creational\Factory\Practical\Module\Recommendation\Filter\Interface;
 
-use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Rule\Interface\Rule;
+use Creational\Factory\Practical\Module\Recommendation\Rule\Interface\Rule;
 
 interface Filter
 {

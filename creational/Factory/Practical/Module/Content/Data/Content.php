@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Content\Data;
+namespace Creational\Factory\Practical\Module\Content\Data;
 
-use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Content\Enum\Type;
+use Creational\Factory\Practical\Module\Content\Enum\Type;
 
 readonly class Content
 {

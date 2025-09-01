@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Entity\Payment;
+namespace Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Payment;
 
 readonly class Payment
 {

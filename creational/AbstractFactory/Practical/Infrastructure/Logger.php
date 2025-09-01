@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Infrastructure;
+namespace Creational\AbstractFactory\Practical\Infrastructure;
 
 class Logger
 {

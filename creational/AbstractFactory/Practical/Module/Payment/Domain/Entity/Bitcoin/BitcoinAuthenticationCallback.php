@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Entity\Bitcoin;
+namespace Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Bitcoin;
 
-use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Entity\Base\BaseAuthenticationCallback;
+use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Base\BaseAuthenticationCallback;
 
 class BitcoinAuthenticationCallback extends BaseAuthenticationCallback
 {

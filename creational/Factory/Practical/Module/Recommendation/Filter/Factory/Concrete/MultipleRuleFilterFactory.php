@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Filter\Factory\Concrete;
+namespace Creational\Factory\Practical\Module\Recommendation\Filter\Factory\Concrete;
 
-use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Filter\Factory\Abstract\FilterFactory;
-use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Filter\Entity\MultipleRuleFilter;
-use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Filter\Interface\Filter;
-use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Rule\Interface\Rule;
+use Creational\Factory\Practical\Module\Recommendation\Filter\Factory\Abstract\FilterFactory;
+use Creational\Factory\Practical\Module\Recommendation\Filter\Entity\MultipleRuleFilter;
+use Creational\Factory\Practical\Module\Recommendation\Filter\Interface\Filter;
+use Creational\Factory\Practical\Module\Recommendation\Rule\Interface\Rule;
 
 class MultipleRuleFilterFactory extends FilterFactory
 {

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Application\Action;
+namespace Creational\AbstractFactory\Practical\Module\Payment\Application\Action;
 
-use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Entity\Gateway\Gateway;
-use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Entity\Payment\Payment;
-use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\Payment\Domain\Factory\Registry\PaymentFactoryRegistry;
+use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Gateway\Gateway;
+use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Payment\Payment;
+use Creational\AbstractFactory\Practical\Module\Payment\Domain\Factory\Registry\PaymentFactoryRegistry;
 
 final readonly class RefundConfirmProcessAction
 {

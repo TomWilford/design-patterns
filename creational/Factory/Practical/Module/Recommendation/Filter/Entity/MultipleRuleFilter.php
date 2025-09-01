@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Filter\Entity;
+namespace Creational\Factory\Practical\Module\Recommendation\Filter\Entity;
 
-use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Filter\Interface\Filter;
-use creational\Singleton\Practical\Application\FeatureFlag\Factory\Practical\Module\Recommendation\Rule\Interface\Rule;
+use Creational\Factory\Practical\Module\Recommendation\Filter\Interface\Filter;
+use Creational\Factory\Practical\Module\Recommendation\Rule\Interface\Rule;
 
 class MultipleRuleFilter implements Filter
 {

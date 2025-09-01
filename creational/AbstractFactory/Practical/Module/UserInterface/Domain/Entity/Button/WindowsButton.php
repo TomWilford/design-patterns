@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\UserInterface\Domain\Entity\Button;
+namespace Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Entity\Button;
 
-use creational\Singleton\Practical\Application\FeatureFlag\AbstractFactory\Practical\Module\UserInterface\Domain\Interface\Button;
+use Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Interface\Button;
 
 class WindowsButton implements Button
 {

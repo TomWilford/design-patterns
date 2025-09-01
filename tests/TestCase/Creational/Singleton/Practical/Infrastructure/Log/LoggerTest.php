@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TestCase\Creational\Singleton\Practical\Infrastructure\Log;
 
-use creational\Singleton\Practical\Application\FeatureFlag\Singleton\Practical\Infrastructure\Log\Logger;
+use Creational\Singleton\Practical\Infrastructure\Log\Logger;
 use PHPUnit\Framework\TestCase;
 
 class LoggerTest extends TestCase
