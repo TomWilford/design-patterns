@@ -19,7 +19,6 @@
       "TestCase\\Creational\\AbstractFactory\\Conceptual\\": "tests/TestCase/Creational/AbstractFactory/Conceptual",
       "TestCase\\Creational\\AbstractFactory\\Practical\\": "tests/TestCase/Creational/AbstractFactory/Practical",
       "TestCase\\Creational\\Singleton\\Practical\\": "tests/TestCase/Creational/Singleton/Practical",
-      "TestCase\\Creational\\Singleton\\Conceptual\\": "tests/TestCase/Creational/Singleton/Conceptual"
     }
   },
   "require-dev": {
