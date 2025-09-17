@@ -8,7 +8,8 @@
       "Creational\\AbstractFactory\\Practical\\": "creational/AbstractFactory/Practical",
       "Creational\\Singleton\\Conceptual\\": "creational/Singleton/Conceptual",
       "Creational\\Singleton\\Practical\\": "creational/Singleton/Practical",
-      "Creational\\Builder\\Conceptual\\": "creational/Builder/Conceptual"
+      "Creational\\Builder\\Conceptual\\": "creational/Builder/Conceptual",
+      "Creational\\Builder\\Practical\\": "creational/Builder/Practical"
     }
   },
   "autoload-dev": {
@@ -19,7 +20,8 @@
       "TestCase\\Creational\\AbstractFactory\\Conceptual\\": "tests/TestCase/Creational/AbstractFactory/Conceptual",
       "TestCase\\Creational\\AbstractFactory\\Practical\\": "tests/TestCase/Creational/AbstractFactory/Practical",
       "TestCase\\Creational\\Singleton\\Practical\\": "tests/TestCase/Creational/Singleton/Practical",
-      "TestCase\\Creational\\Builder\\Conceptual\\": "tests/TestCase/Creational/Builder/Conceptual"
+      "TestCase\\Creational\\Builder\\Conceptual\\": "tests/TestCase/Creational/Builder/Conceptual",
+      "TestCase\\Practical\\Builder\\Conceptual\\": "tests/TestCase/Creational/Builder/Practical"
     }
   },
   "require-dev": {
