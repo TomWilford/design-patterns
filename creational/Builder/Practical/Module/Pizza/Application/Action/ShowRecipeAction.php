@@ -7,6 +7,9 @@ namespace Creational\Builder\Practical\Module\Pizza\Application\Action;
 use Creational\Builder\Practical\Module\Pizza\Application\Builder\Concrete\StandardPizzaBuilder;
 use Creational\Builder\Practical\Module\Pizza\Application\Builder\Director\PizzaDirector;
 use Creational\Builder\Practical\Module\Pizza\Application\Map\PizzaToRecipe;
+use Creational\Builder\Practical\Module\Pizza\Domain\Enum\BaseSize;
+use Creational\Builder\Practical\Module\Pizza\Domain\Enum\BaseStyle;
+use Creational\Builder\Practical\Module\Pizza\Domain\Enum\PizzaPreset;
 
 class ShowRecipeAction
 {
@@ -17,11 +20,16 @@ class ShowRecipeAction
     ) {
     }
 
-    public function __invoke()
+    public function __invoke($request = []): string
     {
         $this->director->setBuilder($this->builder);
-        $this->director->buildMargherita();
+
+        $size = BaseSize::from($request['size']);
+        $style = BaseStyle::from($request['style']);
+        $pizzaPreset = PizzaPreset::from($request['type']);
+        $pizzaPreset->buildPizza($this->director, $size, $style);
         $pizza = $this->builder->getPizza();
-        // TODO: Implement __invoke() method.
+
+        return $this->toRecipe->convert($pizza);
     }
 }
