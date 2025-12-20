@@ -9,7 +9,9 @@
       "Creational\\Singleton\\Conceptual\\": "creational/Singleton/Conceptual",
       "Creational\\Singleton\\Practical\\": "creational/Singleton/Practical",
       "Creational\\Builder\\Conceptual\\": "creational/Builder/Conceptual",
-      "Creational\\Builder\\Practical\\": "creational/Builder/Practical"
+      "Creational\\Builder\\Practical\\": "creational/Builder/Practical",
+      "Creational\\Prototype\\Conceptual\\": "creational/Prototype/Conceptual",
+      "Creational\\Prototype\\Practical\\": "creational/Prototype/Practical"
     }
   },
   "autoload-dev": {
