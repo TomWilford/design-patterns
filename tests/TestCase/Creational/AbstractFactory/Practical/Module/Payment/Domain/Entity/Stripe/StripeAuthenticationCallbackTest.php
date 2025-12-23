@@ -6,8 +6,10 @@ namespace TestCase\Creational\AbstractFactory\Practical\Module\Payment\Domain\En
 
 use Creational\AbstractFactory\Practical\Infrastructure\Logger;
 use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Stripe\StripeAuthenticationCallback;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(StripeAuthenticationCallback::class)]
 class StripeAuthenticationCallbackTest extends TestCase
 {
     public function testHandleCallbackSuccessfullyLogsAction(): void

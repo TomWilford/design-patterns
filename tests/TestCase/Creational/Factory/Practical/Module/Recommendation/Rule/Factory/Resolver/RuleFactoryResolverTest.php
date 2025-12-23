@@ -9,8 +9,10 @@ use Creational\Factory\Practical\Module\Recommendation\Rule\Entity\GreaterThanRu
 use Creational\Factory\Practical\Module\Recommendation\Rule\Factory\Abstract\RuleFactory;
 use Creational\Factory\Practical\Module\Recommendation\Rule\Factory\Resolver\RuleFactoryResolver;
 use Creational\Factory\Practical\Module\Recommendation\Rule\Interface\Rule;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(RuleFactoryResolver::class)]
 class RuleFactoryResolverTest extends TestCase
 {
     public function testEqualsFilterReturnedForEqualsSelection()

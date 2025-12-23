@@ -7,8 +7,10 @@ namespace TestCase\Creational\AbstractFactory\Practical\Module\Payment\Domain\En
 use Creational\AbstractFactory\Practical\Infrastructure\Logger;
 use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Payment\Payment;
 use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\PayPal\PayPalTransactionHandler;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(PayPalTransactionHandler::class)]
 class PayPalTransactionHandlerTest extends TestCase
 {
     public function testHandlePaymentSuccessfullyLogsAction(): void

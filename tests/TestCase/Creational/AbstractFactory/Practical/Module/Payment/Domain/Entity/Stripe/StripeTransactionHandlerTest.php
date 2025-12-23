@@ -7,8 +7,10 @@ namespace TestCase\Creational\AbstractFactory\Practical\Module\Payment\Domain\En
 use Creational\AbstractFactory\Practical\Infrastructure\Logger;
 use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Payment\Payment;
 use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Stripe\StripeTransactionHandler;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(StripeTransactionHandler::class)]
 class StripeTransactionHandlerTest extends TestCase
 {
     public function testHandlePaymentSuccessfullyLogsAction(): void

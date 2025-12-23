@@ -7,10 +7,12 @@ namespace TestCase\Creational\Factory\Practical\Module\Recommendation\Rule\Facto
 use Creational\Factory\Practical\Module\Recommendation\Rule\Entity\EqualsRule;
 use Creational\Factory\Practical\Module\Recommendation\Rule\Factory\Concrete\EqualsRuleFactory;
 use Fixtures\TestEntity;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\UsesClass;
 use PHPUnit\Framework\TestCase;
 
-#[UsesClass(EqualsRuleFactory::class)]
+#[CoversClass(EqualsRuleFactory::class)]
+#[UsesClass(TestEntity::class)]
 class EqualsRuleFactoryTest extends TestCase
 {
     public function testRuleInstantiatedSuccessfully()

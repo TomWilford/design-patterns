@@ -7,8 +7,12 @@ namespace TestCase\Creational\Factory\Practical\Module\Recommendation\Filter\Fac
 use Creational\Factory\Practical\Module\Recommendation\Filter\Entity\SingleRuleFilter;
 use Creational\Factory\Practical\Module\Recommendation\Filter\Factory\Concrete\SingleRuleFilterFactory;
 use Creational\Factory\Practical\Module\Recommendation\Rule\Factory\Concrete\EqualsRuleFactory;
+use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\Attributes\UsesClass;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(SingleRuleFilterFactory::class)]
+#[UsesClass(EqualsRuleFactory::class)]
 class SingleRuleFilterFactoryTest extends TestCase
 {
     public function testSingleRuleFilterFactoryInstantiatesWhenProvidedWithRule()

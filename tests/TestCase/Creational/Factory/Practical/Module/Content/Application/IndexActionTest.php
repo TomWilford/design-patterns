@@ -9,8 +9,14 @@ use Creational\Factory\Practical\Module\Recommendation\Filter\Exception\InvalidF
 use Creational\Factory\Practical\Module\Recommendation\Filter\Runner\FilterRunner;
 use Creational\Factory\Practical\Module\Recommendation\Rule\Factory\Resolver\RuleFactoryResolver;
 use Fixtures\TestEntity;
+use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\Attributes\UsesClass;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(IndexAction::class)]
+#[UsesClass(TestEntity::class)]
+#[UsesClass(RuleFactoryResolver::class)]
+#[UsesClass(FilterRunner::class)]
 class IndexActionTest extends TestCase
 {
     private array $data = [];

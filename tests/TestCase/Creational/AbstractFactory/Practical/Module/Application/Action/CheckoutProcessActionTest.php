@@ -11,8 +11,10 @@ use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Gateway\Ga
 use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\PayPal\PayPalAuthenticationRedirect;
 use Creational\AbstractFactory\Practical\Module\Payment\Domain\Factory\Concrete\PayPalPaymentFactory;
 use Creational\AbstractFactory\Practical\Module\Payment\Domain\Factory\Registry\PaymentFactoryRegistry;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(CheckoutProcessAction::class)]
 class CheckoutProcessActionTest extends TestCase
 {
     public function testNotFoundExceptionSuccessfullyThrownForInvalidGateway()

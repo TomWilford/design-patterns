@@ -7,8 +7,12 @@ namespace TestCase\Creational\Factory\Practical\Module\Recommendation\Rule\Facto
 use Creational\Factory\Practical\Module\Recommendation\Rule\Entity\GreaterThanRule;
 use Creational\Factory\Practical\Module\Recommendation\Rule\Factory\Concrete\GreaterThanRuleFactory;
 use Fixtures\TestEntity;
+use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\Attributes\UsesClass;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(GreaterThanRuleFactory::class)]
+#[UsesClass(TestEntity::class)]
 class GreaterThanRuleFactoryTest extends TestCase
 {
     public function testRuleInstantiated()

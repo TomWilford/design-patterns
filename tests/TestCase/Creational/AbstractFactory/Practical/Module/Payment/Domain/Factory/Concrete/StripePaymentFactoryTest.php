@@ -10,8 +10,10 @@ use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Stripe\Str
 use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Stripe\StripeRefundProcessor;
 use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Stripe\StripeTransactionHandler;
 use Creational\AbstractFactory\Practical\Module\Payment\Domain\Factory\Concrete\StripePaymentFactory;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(StripePaymentFactory::class)]
 class StripePaymentFactoryTest extends TestCase
 {
     public function testGetAuthenticationRedirectReturnsStripeInstance()

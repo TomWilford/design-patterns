@@ -6,8 +6,10 @@ namespace TestCase\Creational\AbstractFactory\Practical\Module\Payment\Domain\En
 
 use Creational\AbstractFactory\Practical\Infrastructure\Logger;
 use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\PayPal\PayPalAuthenticationRedirect;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(PayPalAuthenticationRedirect::class)]
 class PayPalAuthenticationRedirectTest extends TestCase
 {
     public function testRedirectSuccessfullyLogsAction(): void

@@ -6,8 +6,10 @@ namespace TestCase\Creational\AbstractFactory\Practical\Application\Utility;
 
 use Creational\AbstractFactory\Practical\Application\Exception\NotFoundException;
 use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Gateway\Gateway;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(Gateway::class)]
 class ResolvePureEnumTest extends TestCase
 {
     public function testResolveOr404SuccessfullyReturnsEnumForValidValue()

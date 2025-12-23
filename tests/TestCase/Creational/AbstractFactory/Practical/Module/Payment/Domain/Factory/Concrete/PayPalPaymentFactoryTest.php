@@ -10,8 +10,10 @@ use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\PayPal\Pay
 use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\PayPal\PayPalRefundProcessor;
 use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\PayPal\PayPalTransactionHandler;
 use Creational\AbstractFactory\Practical\Module\Payment\Domain\Factory\Concrete\PayPalPaymentFactory;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(PayPalPaymentFactory::class)]
 class PayPalPaymentFactoryTest extends TestCase
 {
     public function testGetAuthenticationRedirectReturnsPayPalInstance()

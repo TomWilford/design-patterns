@@ -7,8 +7,10 @@ namespace TestCase\Creational\AbstractFactory\Practical\Module\Payment\Domain\En
 use Creational\AbstractFactory\Practical\Infrastructure\Logger;
 use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Payment\Payment;
 use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Bitcoin\BitcoinTransactionHandler;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(BitcoinTransactionHandler::class)]
 class BitcoinTransactionHandlerTest extends TestCase
 {
     public function testHandlePaymentSuccessfullyLogsAction(): void

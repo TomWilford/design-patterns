@@ -10,8 +10,10 @@ use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Bitcoin\Bi
 use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Bitcoin\BitcoinRefundProcessor;
 use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Bitcoin\BitcoinTransactionHandler;
 use Creational\AbstractFactory\Practical\Module\Payment\Domain\Factory\Concrete\BitcoinPaymentFactory;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(BitcoinPaymentFactory::class)]
 class BitcoinPaymentFactoryTest extends TestCase
 {
     public function testGetAuthenticationRedirectReturnsBitcoinInstance()

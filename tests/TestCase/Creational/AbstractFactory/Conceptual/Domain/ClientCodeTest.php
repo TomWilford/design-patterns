@@ -7,8 +7,12 @@ namespace TestCase\Creational\AbstractFactory\Conceptual\Domain;
 use Creational\AbstractFactory\Conceptual\Domain\ClientCode;
 use Creational\AbstractFactory\Conceptual\Module\Product\Factory\Concrete\ConcreteFactory1;
 use Creational\AbstractFactory\Conceptual\Module\Product\Factory\Concrete\ConcreteFactory2;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(ClientCode::class)]
+#[CoversClass(ConcreteFactory1::class)]
+#[CoversClass(ConcreteFactory2::class)]
 class ClientCodeTest extends TestCase
 {
     public function testConcreteFactory1ReturnsProduct1Strings()

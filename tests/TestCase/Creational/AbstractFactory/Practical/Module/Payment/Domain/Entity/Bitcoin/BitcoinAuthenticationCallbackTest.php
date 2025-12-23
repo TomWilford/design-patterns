@@ -6,8 +6,10 @@ namespace TestCase\Creational\AbstractFactory\Practical\Module\Payment\Domain\En
 
 use Creational\AbstractFactory\Practical\Infrastructure\Logger;
 use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Bitcoin\BitcoinAuthenticationCallback;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(BitcoinAuthenticationCallback::class)]
 class BitcoinAuthenticationCallbackTest extends TestCase
 {
     public function testHandleCallbackSuccessfullyLogsAction(): void

@@ -7,8 +7,13 @@ namespace TestCase\Creational\Factory\Practical\Module\Recommendation\Filter\Run
 use Creational\Factory\Practical\Module\Recommendation\Filter\Runner\FilterRunner;
 use Creational\Factory\Practical\Module\Recommendation\Rule\Factory\Concrete\EqualsRuleFactory;
 use Fixtures\TestEntity;
+use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\Attributes\UsesClass;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(FilterRunner::class)]
+#[UsesClass(TestEntity::class)]
+#[UsesClass(EqualsRuleFactory::class)]
 class FilterRunnerTest extends TestCase
 {
     private array $data = [];

@@ -7,8 +7,10 @@ namespace TestCase\Creational\AbstractFactory\Practical\Module\Payment\Domain\En
 use Creational\AbstractFactory\Practical\Infrastructure\Logger;
 use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Payment\Payment;
 use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Bitcoin\BitcoinRefundProcessor;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(BitcoinRefundProcessor::class)]
 class BitcoinRefundProcessorTest extends TestCase
 {
     public function testProcessRefundSuccessfullyLogsAction(): void

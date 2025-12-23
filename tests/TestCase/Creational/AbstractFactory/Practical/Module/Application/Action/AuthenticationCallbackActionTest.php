@@ -14,8 +14,10 @@ use Creational\AbstractFactory\Practical\Module\Payment\Domain\Factory\Concrete\
 use Creational\AbstractFactory\Practical\Module\Payment\Domain\Factory\Concrete\PayPalPaymentFactory;
 use Creational\AbstractFactory\Practical\Module\Payment\Domain\Factory\Concrete\StripePaymentFactory;
 use Creational\AbstractFactory\Practical\Module\Payment\Domain\Factory\Registry\PaymentFactoryRegistry;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(AuthenticationCallbackAction::class)]
 class AuthenticationCallbackActionTest extends TestCase
 {
     public function testNotFoundExceptionSuccessfullyThrownForInvalidGateway()

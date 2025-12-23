@@ -8,8 +8,10 @@ use Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Factory\Int
 use Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Interface\Button;
 use Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Interface\Checkbox;
 use Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Render\RenderUi;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(RenderUi::class)]
 class RenderUiTest extends TestCase
 {
     public function testRenderReturnsButtons()

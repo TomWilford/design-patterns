@@ -7,10 +7,13 @@ namespace TestCase\Creational\Factory\Conceptual\Domain;
 use Creational\Factory\Conceptual\Domain\ClientCode;
 use Creational\Factory\Conceptual\Module\Product\Factory\Concrete\ProductAFactory;
 use Creational\Factory\Conceptual\Module\Product\Factory\Concrete\ProductBFactory;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\UsesClass;
 use PHPUnit\Framework\TestCase;
 
-#[UsesClass(ClientCode::class)]
+#[CoversClass(ClientCode::class)]
+#[UsesClass(ProductAFactory::class)]
+#[UsesClass(ProductBFactory::class)]
 class ClientCodeTest extends TestCase
 {
     public function testConcreteCreatorAReturnsProductAString()

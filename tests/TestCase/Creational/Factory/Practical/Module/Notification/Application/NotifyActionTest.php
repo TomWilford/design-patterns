@@ -12,13 +12,14 @@ use Creational\Factory\Practical\Module\Notification\Domain\Factory\Concrete\Ema
 use Creational\Factory\Practical\Module\Notification\Domain\Factory\Concrete\PushNotificationFactory;
 use Creational\Factory\Practical\Module\Notification\Domain\Factory\Concrete\SmsNotificationFactory;
 use Creational\Factory\Practical\Module\Notification\Domain\Interface\Notifier;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\UsesClass;
+use PHPUnit\Framework\Attributes\UsesClassesThatExtendClass;
 use PHPUnit\Framework\Attributes\UsesClassesThatImplementInterface;
 use PHPUnit\Framework\TestCase;
 
-#[UsesClassesThatImplementInterface(NotificationFactory::class)]
-#[UsesClassesThatImplementInterface(Notifier::class)]
-#[UsesClass(NotifyAction::class)]
+#[CoversClass(NotifyAction::class)]
+#[UsesClassesThatExtendClass(NotificationFactory::class)]
 class NotifyActionTest extends TestCase
 {
     public function testEmailNotificationSendsMessage(): void

@@ -12,7 +12,10 @@ use Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Entity\Chec
 use Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Factory\Concrete\MacFactory;
 use Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Factory\Concrete\WindowsFactory;
 use Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Factory\Resolver\UiFactoryResolver;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
+
+#[CoversClass(ShowAction::class)]
 
 class ShowActionTest extends TestCase
 {

@@ -8,10 +8,17 @@ use Creational\Singleton\Practical\Application\FeatureFlag\FeatureFlagKey;
 use Creational\Singleton\Practical\Application\FeatureFlag\FeatureFlagManager;
 use Creational\Singleton\Practical\Infrastructure\Log\Logger;
 use Creational\Singleton\Practical\Module\Product\Application\CreateProductAction;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(CreateProductAction::class)]
 class CreateProductTest extends TestCase
 {
+    protected function tearDown(): void
+    {
+        FeatureFlagManager::disableFeatureFlag(FeatureFlagKey::LOGGING);
+    }
+
     public function testLoggingCalledWhenFeatureFlagDisabled(): void
     {
         $loggerSpy = $this->createMock(Logger::class);

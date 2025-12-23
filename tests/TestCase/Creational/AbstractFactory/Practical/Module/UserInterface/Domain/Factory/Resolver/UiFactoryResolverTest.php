@@ -9,8 +9,10 @@ use Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Factory\Con
 use Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Factory\Concrete\WindowsFactory;
 use Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Factory\Resolver\UiFactoryResolver;
 use InvalidArgumentException;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(UiFactoryResolver::class)]
 class UiFactoryResolverTest extends TestCase
 {
     public function testResolveSuccessfullyReturnsMacFactoryForMacEnum()
