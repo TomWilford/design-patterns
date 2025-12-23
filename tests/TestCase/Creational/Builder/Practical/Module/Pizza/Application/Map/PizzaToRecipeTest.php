@@ -24,11 +24,11 @@ class PizzaToRecipeTest extends TestCase
 
     public function testBaseConvertsToString(): void
     {
-        $pizzaMock = $this->createMock(Pizza::class);
-        $pizzaMock->expects($this->any())->method('getBase')->willReturn(new ThinCrustMediumBase());
+        $pizzaStub = $this->createStub(Pizza::class);
+        $pizzaStub->method('getBase')->willReturn(new ThinCrustMediumBase());
         $sut = new PizzaToRecipe();
 
-        $result = $sut->convert($pizzaMock);
+        $result = $sut->convert($pizzaStub);
 
         $this->assertStringContainsString('400g dough rolled to 11"', $result);
     }
@@ -38,12 +38,12 @@ class PizzaToRecipeTest extends TestCase
         $base = new ThinCrustMediumBase();
         $sauce = new RedSauce();
         $expected = $sauce->getVolumePerInch() * $base->getRolledDiameter();
-        $pizzaMock = $this->createMock(Pizza::class);
-        $pizzaMock->expects($this->any())->method('getBase')->willReturn($base);
-        $pizzaMock->expects($this->any())->method('getSauce')->willReturn($sauce);
+        $pizzaStub = $this->createStub(Pizza::class);
+        $pizzaStub->method('getBase')->willReturn($base);
+        $pizzaStub->method('getSauce')->willReturn($sauce);
         $sut = new PizzaToRecipe();
 
-        $result = $sut->convert($pizzaMock);
+        $result = $sut->convert($pizzaStub);
 
         $this->assertStringContainsString($expected . 'ml of Standard Red Sauce', $result);
     }
@@ -56,13 +56,13 @@ class PizzaToRecipeTest extends TestCase
         $toppingB = new PepperoniTopping();
         $expectedA = $toppingA->getQuantity() * $base->getRolledDiameter();
         $expectedB = $toppingB->getQuantity() * $base->getRolledDiameter();
-        $pizzaMock = $this->createMock(Pizza::class);
-        $pizzaMock->expects($this->any())->method('getBase')->willReturn($base);
-        $pizzaMock->expects($this->any())->method('getSauce')->willReturn($sauce);
-        $pizzaMock->expects($this->any())->method('getToppings')->willReturn([$toppingA, $toppingB]);
+        $pizzaStub = $this->createStub(Pizza::class);
+        $pizzaStub->method('getBase')->willReturn($base);
+        $pizzaStub->method('getSauce')->willReturn($sauce);
+        $pizzaStub->method('getToppings')->willReturn([$toppingA, $toppingB]);
         $sut = new PizzaToRecipe();
 
-        $result = $sut->convert($pizzaMock);
+        $result = $sut->convert($pizzaStub);
 
         $this->assertStringContainsString(
             $expectedA . ' ' . $toppingA->getUnits() . ' of ' . $toppingA->getName(),

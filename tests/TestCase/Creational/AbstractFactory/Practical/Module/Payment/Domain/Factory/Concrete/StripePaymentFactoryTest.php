@@ -18,7 +18,7 @@ class StripePaymentFactoryTest extends TestCase
 {
     public function testGetAuthenticationRedirectReturnsStripeInstance()
     {
-        $logger = $this->createMock(Logger::class);
+        $logger = $this->createStub(Logger::class);
         $sut = new StripePaymentFactory($logger);
 
         $this->assertInstanceOf(StripeAuthenticationRedirect::class, $sut->getAuthenticationRedirect());
@@ -26,7 +26,7 @@ class StripePaymentFactoryTest extends TestCase
 
     public function testGetAuthenticationCallbackReturnsStripeInstance()
     {
-        $logger = $this->createMock(Logger::class);
+        $logger = $this->createStub(Logger::class);
         $sut = new StripePaymentFactory($logger);
 
         $this->assertInstanceOf(StripeAuthenticationCallback::class, $sut->getAuthenticationCallback());
@@ -34,7 +34,7 @@ class StripePaymentFactoryTest extends TestCase
 
     public function testGetTransactionHandlerRedirectReturnsStripeInstance()
     {
-        $logger = $this->createMock(Logger::class);
+        $logger = $this->createStub(Logger::class);
         $sut = new StripePaymentFactory($logger);
 
         $this->assertInstanceOf(StripeTransactionHandler::class, $sut->getTransactionHandler());
@@ -42,7 +42,7 @@ class StripePaymentFactoryTest extends TestCase
 
     public function testGetRefundProcessorReturnsStripeInstance()
     {
-        $logger = $this->createMock(Logger::class);
+        $logger = $this->createStub(Logger::class);
         $sut = new StripePaymentFactory($logger);
 
         $this->assertInstanceOf(StripeRefundProcessor::class, $sut->getRefundProcessor());

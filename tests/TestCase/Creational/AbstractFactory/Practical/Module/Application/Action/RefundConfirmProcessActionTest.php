@@ -19,7 +19,7 @@ class RefundConfirmProcessActionTest extends TestCase
 {
     public function testNotFoundExceptionSuccessfullyThrownForInvalidGateway()
     {
-        $register = $this->createMock(PaymentFactoryRegistry::class);
+        $register = $this->createStub(PaymentFactoryRegistry::class);
 
         $sut = new RefundConfirmProcessAction($register);
 

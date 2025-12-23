@@ -18,7 +18,7 @@ class BitcoinPaymentFactoryTest extends TestCase
 {
     public function testGetAuthenticationRedirectReturnsBitcoinInstance()
     {
-        $logger = $this->createMock(Logger::class);
+        $logger = $this->createStub(Logger::class);
         $sut = new BitcoinPaymentFactory($logger);
 
         $this->assertInstanceOf(BitcoinAuthenticationRedirect::class, $sut->getAuthenticationRedirect());
@@ -26,7 +26,7 @@ class BitcoinPaymentFactoryTest extends TestCase
 
     public function testGetAuthenticationCallbackReturnsBitcoinInstance()
     {
-        $logger = $this->createMock(Logger::class);
+        $logger = $this->createStub(Logger::class);
         $sut = new BitcoinPaymentFactory($logger);
 
         $this->assertInstanceOf(BitcoinAuthenticationCallback::class, $sut->getAuthenticationCallback());
@@ -34,7 +34,7 @@ class BitcoinPaymentFactoryTest extends TestCase
 
     public function testGetTransactionHandlerRedirectReturnsBitcoinInstance()
     {
-        $logger = $this->createMock(Logger::class);
+        $logger = $this->createStub(Logger::class);
         $sut = new BitcoinPaymentFactory($logger);
 
         $this->assertInstanceOf(BitcoinTransactionHandler::class, $sut->getTransactionHandler());
@@ -42,7 +42,7 @@ class BitcoinPaymentFactoryTest extends TestCase
 
     public function testGetRefundProcessorReturnsBitcoinInstance()
     {
-        $logger = $this->createMock(Logger::class);
+        $logger = $this->createStub(Logger::class);
         $sut = new BitcoinPaymentFactory($logger);
 
         $this->assertInstanceOf(BitcoinRefundProcessor::class, $sut->getRefundProcessor());

@@ -21,8 +21,8 @@ class ProcessOrderActionTest extends TestCase
     public function testEmptyArrayReturnedForNoLineItems(): void
     {
         $director = new ProductDirector();
-        $mapperMock = $this->createMock(ComponentMapper::class);
-        $sut = new ProcessOrderAction($director, $mapperMock);
+        $mapperStub = $this->createStub(ComponentMapper::class);
+        $sut = new ProcessOrderAction($director, $mapperStub);
 
         $result = $sut();
 
@@ -32,8 +32,8 @@ class ProcessOrderActionTest extends TestCase
     public function testStandardWidgetCanBeCreated(): void
     {
         $director = new ProductDirector();
-        $mapperMock = $this->createMock(ComponentMapper::class);
-        $sut = new ProcessOrderAction($director, $mapperMock);
+        $mapperStub = $this->createStub(ComponentMapper::class);
+        $sut = new ProcessOrderAction($director, $mapperStub);
 
         $result = $sut([
             [

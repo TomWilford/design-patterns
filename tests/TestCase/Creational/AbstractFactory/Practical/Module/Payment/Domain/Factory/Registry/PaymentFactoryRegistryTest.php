@@ -18,7 +18,7 @@ class PaymentFactoryRegistryTest extends TestCase
 {
     public function testGetFactoryForPayPalGateway()
     {
-        $logger = $this->createMock(Logger::class);
+        $logger = $this->createStub(Logger::class);
 
         $sut = new PaymentFactoryRegistry($logger);
         $this->assertInstanceOf(PayPalPaymentFactory::class, $sut->getFactory(Gateway::PAYPAL));
@@ -26,7 +26,7 @@ class PaymentFactoryRegistryTest extends TestCase
 
     public function testGetFactoryForBitcoinGateway()
     {
-        $logger = $this->createMock(Logger::class);
+        $logger = $this->createStub(Logger::class);
 
         $sut = new PaymentFactoryRegistry($logger);
         $this->assertInstanceOf(BitcoinPaymentFactory::class, $sut->getFactory(Gateway::BITCOIN));
@@ -34,7 +34,7 @@ class PaymentFactoryRegistryTest extends TestCase
 
     public function testGetFactoryForStripeGateway()
     {
-        $logger = $this->createMock(Logger::class);
+        $logger = $this->createStub(Logger::class);
 
         $sut = new PaymentFactoryRegistry($logger);
         $this->assertInstanceOf(StripePaymentFactory::class, $sut->getFactory(Gateway::STRIPE));

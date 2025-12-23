@@ -19,7 +19,7 @@ class CheckoutConfirmProcessActionTest extends TestCase
 {
     public function testNotFoundExceptionSuccessfullyThrownForInvalidGateway()
     {
-        $register = $this->createMock(PaymentFactoryRegistry::class);
+        $register = $this->createStub(PaymentFactoryRegistry::class);
 
         $sut = new CheckoutConfirmProcessAction($register);
 

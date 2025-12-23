@@ -18,7 +18,7 @@ class PayPalPaymentFactoryTest extends TestCase
 {
     public function testGetAuthenticationRedirectReturnsPayPalInstance()
     {
-        $logger = $this->createMock(Logger::class);
+        $logger = $this->createStub(Logger::class);
         $sut = new PayPalPaymentFactory($logger);
 
         $this->assertInstanceOf(PayPalAuthenticationRedirect::class, $sut->getAuthenticationRedirect());
@@ -26,7 +26,7 @@ class PayPalPaymentFactoryTest extends TestCase
 
     public function testGetAuthenticationCallbackReturnsPayPalInstance()
     {
-        $logger = $this->createMock(Logger::class);
+        $logger = $this->createStub(Logger::class);
         $sut = new PayPalPaymentFactory($logger);
 
         $this->assertInstanceOf(PayPalAuthenticationCallback::class, $sut->getAuthenticationCallback());
@@ -34,7 +34,7 @@ class PayPalPaymentFactoryTest extends TestCase
 
     public function testGetTransactionHandlerRedirectReturnsPayPalInstance()
     {
-        $logger = $this->createMock(Logger::class);
+        $logger = $this->createStub(Logger::class);
         $sut = new PayPalPaymentFactory($logger);
 
         $this->assertInstanceOf(PayPalTransactionHandler::class, $sut->getTransactionHandler());
@@ -42,7 +42,7 @@ class PayPalPaymentFactoryTest extends TestCase
 
     public function testGetRefundProcessorReturnsPayPalInstance()
     {
-        $logger = $this->createMock(Logger::class);
+        $logger = $this->createStub(Logger::class);
         $sut = new PayPalPaymentFactory($logger);
 
         $this->assertInstanceOf(PayPalRefundProcessor::class, $sut->getRefundProcessor());
