@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Creational\Builder\Practical\Module\Email\Application\Builder\Concrete;
 
 use Creational\Builder\Practical\Module\Email\Application\Builder\Concrete\BaseEmailBuilder;
+use Creational\Builder\Practical\Module\Email\Domain\Entity\Email\Email;
 use Creational\Builder\Practical\Module\Email\Domain\Entity\Part\EmailBody;
 use Creational\Builder\Practical\Module\Email\Domain\Interface\EmailBodyInterface;
 
@@ -24,13 +25,27 @@ class HtmlEmailBuilder extends BaseEmailBuilder
 
     private function getHeaderHtml(): string
     {
+        $string = $this->getSubjectContent();
+
         return <<<HTML
         <html lang="uk">
             <head>
-                <title>{$this->email->getSubject()->getContent()}</title>
+                <title>{$string}</title>
             </head>
             <body>
         HTML;
+    }
+
+    private function getSubjectContent(): string
+    {
+        return $this->isSubjectConfigured()
+            ? $this->email->getSubject()->getContent()
+            : '';
+    }
+
+    private function isSubjectConfigured(): bool
+    {
+        return new \ReflectionProperty(Email::class, 'subject')->isInitialized($this->email);
     }
 
     private function getFooterHtml(): string

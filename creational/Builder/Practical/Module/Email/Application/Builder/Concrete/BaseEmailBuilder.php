@@ -49,7 +49,7 @@ abstract class BaseEmailBuilder implements EmailBuilder
 
     public function setRecipient(EmailRecipientInterface $recipient): void
     {
-        $this->setRecipient($recipient);
+        $this->email->setRecipient($recipient);
     }
 
     public function setCC(EmailCCInterface $CC): void
