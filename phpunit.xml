@@ -11,8 +11,8 @@
          failOnPhpunitDeprecation="true"
          failOnRisky="true"
          failOnWarning="true"
-         colors="true"
-         failOnAllIssues="true">
+         failOnAllIssues="true"
+         colors="true">
     <testsuites>
         <testsuite name="default">
             <directory>tests/TestCase</directory>
