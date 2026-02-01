@@ -7,9 +7,12 @@ use Creational\Prototype\Conceptual\Module\Product\Domain\Product;
 
 class ProductPrototypeRegistry
 {
+    /**
+     * @var array<Product>
+     */
     private array $prototypes = [];
 
-    public function addPrototype(string $key, Prototype $prototype): void
+    public function addPrototype(string $key, Product $prototype): void
     {
         $this->prototypes[$key] = $prototype;
     }

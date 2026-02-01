@@ -8,7 +8,6 @@ use Creational\Builder\Practical\Module\Pizza\Domain\Interface\Sauce;
 
 class WhiteSauce implements Sauce
 {
-
     public function getName(): string
     {
         return 'White Sauce';

@@ -6,5 +6,5 @@ use Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Payment\Pa
 
 interface RefundProcessor
 {
-    public function processRefund(Payment $payment);
+    public function processRefund(Payment $payment): void;
 }

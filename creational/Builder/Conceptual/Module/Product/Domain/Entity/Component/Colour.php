@@ -8,7 +8,6 @@ use Creational\Builder\Conceptual\Module\Product\Domain\Entity\Component\Abstrac
 
 readonly class Colour extends AbstractComponent
 {
-
     public function getType(): string
     {
         return 'colour';

@@ -7,6 +7,9 @@ namespace Creational\Singleton\Conceptual\Infrastructure\Configuration;
 class Configuration
 {
     private static ?Configuration $instance = null;
+    /**
+     * @var array<string, mixed>
+     */
     private array $settings = [];
 
     private function __construct()

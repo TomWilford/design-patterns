@@ -12,7 +12,6 @@ abstract class RuleFactory
         protected string $entityPropertyToCompare,
         protected mixed $inputValueToCompare
     ) {
-        //
     }
 
     abstract public function createRule(): Rule;

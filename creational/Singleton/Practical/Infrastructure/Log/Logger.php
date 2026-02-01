@@ -5,15 +5,17 @@ declare(strict_types=1);
 namespace Creational\Singleton\Practical\Infrastructure\Log;
 
 use DateTimeImmutable;
+use Nyholm\Psr7\Stream;
+use Psr\Http\Message\StreamInterface;
 
 class Logger
 {
     private static ?Logger $instance = null;
-    private $fileHandle;
+    private ?StreamInterface $fileHandle = null;
 
     private function __construct()
     {
-        $this->fileHandle = fopen('php://stdout', 'a');
+        $this->fileHandle = new Stream(fopen('php://stdout', 'a'));
     }
 
     public static function getInstance(): Logger
@@ -41,13 +43,14 @@ class Logger
 
     private function writeToLog(string $message): void
     {
-        $date = (new DateTimeImmutable())->format('U');
-        fwrite($this->fileHandle, $date . ' ' . $message . "\n");
+        $date = new DateTimeImmutable()->format('U');
+        $this->fileHandle->write($date . ' ' . $message . "\n");
     }
 
-    public function __destruct() {
-        if (is_resource($this->fileHandle)) {
-            fclose($this->fileHandle);
+    public function __destruct()
+    {
+        if ($this->fileHandle && $this->fileHandle->isWritable()) {
+            $this->fileHandle->close();
         }
     }
 }

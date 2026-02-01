@@ -6,7 +6,7 @@ namespace Creational\AbstractFactory\Practical\Module\Payment\Domain\Entity\Paym
 
 readonly class Payment
 {
-    public function __construct(private int $amount,  private int $vatAmount, private string $currency)
+    public function __construct(private int $amount, private int $vatAmount, private string $currency)
     {
     }
 

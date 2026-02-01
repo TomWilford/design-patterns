@@ -9,6 +9,9 @@ use Creational\Builder\Conceptual\Module\Product\Domain\Interface\Product;
 
 abstract class AbstractProduct implements Product
 {
+    /**
+     * @var array<string, Component>
+     */
     protected array $components = [];
 
     public function addComponent(Component $component): void

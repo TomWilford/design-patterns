@@ -9,13 +9,18 @@ use Creational\Factory\Practical\Module\Recommendation\Rule\Interface\Rule;
 
 class SingleRuleFilter implements Filter
 {
+    /**
+     * @var array<object>
+     */
     private array $data;
 
     public function __construct(private readonly Rule $rule)
     {
-        //
     }
 
+    /**
+     * @param array<object> $data
+     */
     public function setData(array $data): void
     {
         $this->data = $data;

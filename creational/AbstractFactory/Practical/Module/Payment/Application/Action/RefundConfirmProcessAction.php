@@ -14,6 +14,16 @@ final readonly class RefundConfirmProcessAction
     {
     }
 
+    /**
+     * @param array{
+     *     "payment_gateway"?: string,
+     *     "payment"?: array{
+     *          "amount": int,
+     *          "vat_amount": int,
+     *          "currency": string
+     *      }
+     * } $request
+     */
     public function __invoke(array $request = []): string
     {
         $gateway = Gateway::resolveOr404($request['payment_gateway']);

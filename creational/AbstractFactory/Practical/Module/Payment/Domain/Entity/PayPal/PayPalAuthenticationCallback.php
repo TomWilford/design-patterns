@@ -17,6 +17,6 @@ class PayPalAuthenticationCallback extends BaseAuthenticationCallback
 
     public function processCallback(): void
     {
-        $this->logger->log('Processing PayPal callback');
+        $this->logger->log('Processing PayPal callback with secret ' . $this->secret);
     }
 }

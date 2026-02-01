@@ -6,5 +6,4 @@ namespace Creational\Factory\Practical\Domain\Exception;
 
 class NotificationDispatchException extends \RuntimeException
 {
-
 }

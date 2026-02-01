@@ -13,6 +13,11 @@ final readonly class CheckoutProcessAction
     {
     }
 
+    /**
+     * @param array{
+     *     "payment_gateway"?: string
+     * } $request
+     */
     public function __invoke(array $request = []): string
     {
         $gateway = Gateway::resolveOr404($request['payment_gateway']);

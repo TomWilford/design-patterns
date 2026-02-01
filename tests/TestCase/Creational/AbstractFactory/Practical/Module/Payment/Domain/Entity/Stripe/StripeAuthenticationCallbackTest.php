@@ -15,9 +15,12 @@ class StripeAuthenticationCallbackTest extends TestCase
     public function testHandleCallbackSuccessfullyLogsAction(): void
     {
         $loggerSpy = $this->createMock(Logger::class);
-        $loggerSpy->expects($this->once())->method('log')->with('Processing Stripe callback');
+        $loggerSpy->expects($this->once())
+            ->method('log')
+            ->with('Processing Stripe callback with token foo');
 
         $sut = new StripeAuthenticationCallback($loggerSpy);
+        $sut->setToken('foo');
         $sut->processCallback();
     }
 }

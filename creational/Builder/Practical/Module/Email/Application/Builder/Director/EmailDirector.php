@@ -36,8 +36,7 @@ class EmailDirector
         EmailSenderInterface $emailSender,
         EmailBCCInterface $bcc,
         ?EmailAttachmentsInterface $emailAttachment = null
-    ): void
-    {
+    ): void {
         $this->buildStandardEmail(
             $emailSubject,
             $emailBody,

@@ -8,6 +8,11 @@ use Creational\Singleton\Conceptual\Infrastructure\Configuration\Configuration;
 
 class AdminPanelStoreAction
 {
+    /**
+     * @param array{
+     *     "theme": mixed
+     * } $arguments
+     */
     public function __invoke(array $arguments): void
     {
         $configuration = Configuration::getInstance();
