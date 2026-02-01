@@ -1,8 +1,8 @@
-# Singleton
-Singleton is used when you want **only one instance** of something 
+## Singleton
+Singleton is used when you want only one instance of something 
 throughout the entire lifecycle of the application. Instead of creating
-multiple objects, **all calls** to the class will **share the same 
-instance**. 
+multiple objects, all calls to the class will share the same 
+instance.
 
 ## Pros
 - Prevents critical components (e.g. database) from being duplicated
