@@ -10,11 +10,11 @@ use RuntimeException;
 class DefaultTemplateRegistry
 {
     /**
-     * @var array<Prototype>
+     * @var array<Document>
      */
     private array $templates = [];
 
-    public function register(DefaultTemplate $key, Prototype $template): void
+    public function register(DefaultTemplate $key, Document $template): void
     {
         $this->templates[$key->name] = $template;
     }

@@ -14,7 +14,13 @@ readonly class ShowAction
     {
     }
 
-    public function __invoke($request): string
+    /**
+     * @param array{
+     *     "operatingSystem": string
+     * } $request
+     * @return string
+     */
+    public function __invoke(array $request): string
     {
         $operatingSystem = Os::tryFrom($request['operatingSystem']);
         $uiFactory = $this->resolver->resolve($operatingSystem);

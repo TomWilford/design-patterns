@@ -17,6 +17,6 @@ class StripeAuthenticationCallback extends BaseAuthenticationCallback
 
     public function processCallback(): void
     {
-        $this->logger->log('Processing Stripe callback');
+        $this->logger->log('Processing Stripe callback with token ' . $this->token);
     }
 }

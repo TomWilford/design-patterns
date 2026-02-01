@@ -6,8 +6,6 @@ namespace Creational\Singleton\Practical\Application\FeatureFlag;
 
 class FeatureFlagManager
 {
-    private static ?FeatureFlagManager $instance = null;
-
     /**
      * @var array<FeatureFlag>
      */

@@ -15,9 +15,12 @@ class PayPalAuthenticationCallbackTest extends TestCase
     public function testHandleCallbackSuccessfullyLogsAction(): void
     {
         $loggerSpy = $this->createMock(Logger::class);
-        $loggerSpy->expects($this->once())->method('log')->with('Processing PayPal callback');
+        $loggerSpy->expects($this->once())
+            ->method('log')
+            ->with('Processing PayPal callback with secret foo');
 
         $sut = new PayPalAuthenticationCallback($loggerSpy);
+        $sut->setMfaCode('foo');
         $sut->processCallback();
     }
 }

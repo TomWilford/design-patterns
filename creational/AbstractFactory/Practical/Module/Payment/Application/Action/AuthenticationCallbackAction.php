@@ -15,6 +15,14 @@ final readonly class AuthenticationCallbackAction
     {
     }
 
+    /**
+     * @param array<string> $request
+     * @param array{
+     *     "payment_gateway"?: string,
+     *     "token"?: string,
+     *     "secret"?: string
+     * } $arguments
+     */
     public function __invoke(array $request = [], array $arguments = []): string
     {
         $gateway = Gateway::resolveOr404($arguments['payment_gateway']);

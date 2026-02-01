@@ -20,7 +20,14 @@ class ShowRecipeAction
     ) {
     }
 
-    public function __invoke($request = []): string
+    /**
+     * @param array{
+     *     "size"?: string,
+     *     "style"?: string,
+     *     "type"?: string
+     * } $request
+     */
+    public function __invoke(array $request = []): string
     {
         $this->director->setBuilder($this->builder);
 

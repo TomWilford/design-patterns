@@ -145,6 +145,10 @@ class Document implements Prototype
         return $this->metadata;
     }
 
+    /**
+     * @param array<Metadata> $metadata
+     * @return void
+     */
     public function setMetadata(array $metadata): void
     {
         $this->metadata = $metadata;

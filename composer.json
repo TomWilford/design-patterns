@@ -29,9 +29,18 @@
     }
   },
   "require-dev": {
-    "phpunit/phpunit": "^12.5"
+    "phpunit/phpunit": "^12.5",
+    "phpstan/phpstan": "^2.1",
+    "squizlabs/php_codesniffer": "^4.0"
   },
   "require": {
-    "symfony/emoji": "^8"
+    "symfony/emoji": "^8",
+    "psr/http-message": "^2.0",
+    "nyholm/psr7": "^1.8"
+  },
+  "scripts": {
+    "stan": "./vendor/bin/phpstan",
+    "cs-scan": "./vendor/bin/phpcs",
+    "cs-fix": "./vendor/bin/phpcbf"
   }
 }

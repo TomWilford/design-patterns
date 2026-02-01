@@ -1,10 +1,11 @@
 <?php
 
-namespace TestCase\Creational\Prototype\Practical\Module\OutgoingLetter\Action;
+namespace TestCase\Creational\Prototype\Practical\Module\OutgoingLetter\Application\Action;
 
 use Creational\Prototype\Practical\Application\Concrete\Render\RenderWebUi;
 use Creational\Prototype\Practical\Application\Interface\Render;
-use Creational\Prototype\Practical\Module\OutgoingLetter\Action\CustomiseSelectedTemplateAction;
+use Creational\Prototype\Practical\Module\OutgoingLetter\Application\Action\CustomiseSelectedTemplateAction;
+use Creational\Prototype\Practical\Module\OutgoingLetter\Application\Request\UpdateDocumentFromRequest;
 use Creational\Prototype\Practical\Module\OutgoingLetter\Domain\Document\Clause;
 use Creational\Prototype\Practical\Module\OutgoingLetter\Domain\Document\Document;
 use Creational\Prototype\Practical\Module\OutgoingLetter\Domain\Document\Metadata;
@@ -15,9 +16,11 @@ use Creational\Prototype\Practical\Module\OutgoingLetter\Infrastructure\Reposito
 use Creational\Prototype\Practical\Module\OutgoingLetter\Infrastructure\Repository\SignatoryRepository;
 use Creational\Prototype\Practical\Module\OutgoingLetter\Infrastructure\Template\DefaultTemplateRegistry;
 use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\Attributes\UsesClass;
 use PHPUnit\Framework\TestCase;
 
 #[CoversClass(CustomiseSelectedTemplateAction::class)]
+#[UsesClass(UpdateDocumentFromRequest::class)]
 class CustomiseSelectedTemplateActionTest extends TestCase
 {
     private DefaultTemplateRegistry $defaultTemplateRegistry;
@@ -43,7 +46,8 @@ class CustomiseSelectedTemplateActionTest extends TestCase
         $registry = $this->createStub(DefaultTemplateRegistry::class);
         $clauses = $this->createStub(ClauseRepository::class);
         $signatories = $this->createStub(SignatoryRepository::class);
-        $sut = new CustomiseSelectedTemplateAction($render, $registry, $clauses, $signatories);
+        $fromRequest = new UpdateDocumentFromRequest($clauses, $signatories);
+        $sut = new CustomiseSelectedTemplateAction($render, $registry, $fromRequest);
 
         $this->expectException(\Error::class);
         $sut([
@@ -57,7 +61,8 @@ class CustomiseSelectedTemplateActionTest extends TestCase
         $registry = $this->defaultTemplateRegistry;
         $clauses = $this->createStub(ClauseRepository::class);
         $signatories = $this->createStub(SignatoryRepository::class);
-        $sut = new CustomiseSelectedTemplateAction($render, $registry, $clauses, $signatories);
+        $fromRequest = new UpdateDocumentFromRequest($clauses, $signatories);
+        $sut = new CustomiseSelectedTemplateAction($render, $registry, $fromRequest);
 
         $result = $sut([
             'selectedTemplate' => DefaultTemplate::NDA->name,
@@ -72,7 +77,8 @@ class CustomiseSelectedTemplateActionTest extends TestCase
         $registry = $this->defaultTemplateRegistry;
         $clauses = $this->createStub(ClauseRepository::class);
         $signatories = $this->createStub(SignatoryRepository::class);
-        $sut = new CustomiseSelectedTemplateAction($render, $registry, $clauses, $signatories);
+        $fromRequest = new UpdateDocumentFromRequest($clauses, $signatories);
+        $sut = new CustomiseSelectedTemplateAction($render, $registry, $fromRequest);
 
         $result = $sut([
             'selectedTemplate' => DefaultTemplate::NDA->name,

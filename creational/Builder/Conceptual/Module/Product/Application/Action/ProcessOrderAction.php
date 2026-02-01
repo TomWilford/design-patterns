@@ -15,7 +15,16 @@ class ProcessOrderAction
     {
     }
 
-    public function __invoke($lineItems = [])
+    /**
+     * @param array{
+     *     int?: array{
+     *         "type": string,
+     *         "components"?: array<string, string>
+     *     }
+     * } $lineItems
+     * @return array<string>
+     */
+    public function __invoke(array $lineItems = []): array
     {
         $productsForOrder = [];
         foreach ($lineItems as $item) {

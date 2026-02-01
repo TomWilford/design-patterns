@@ -84,5 +84,4 @@ class PizzaToRecipe
 
         return implode(PHP_EOL, $toppings);
     }
-
 }

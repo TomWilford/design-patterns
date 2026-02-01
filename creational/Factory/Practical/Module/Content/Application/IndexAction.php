@@ -23,6 +23,7 @@ class IndexAction
      *     "filterValue": mixed
      * }> $filterInput
      * @param array<object> $data
+     * @return array<object>
      */
     public function __invoke(array $filterInput, array $data): array
     {

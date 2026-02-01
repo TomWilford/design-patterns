@@ -8,7 +8,6 @@ use Creational\AbstractFactory\Practical\Module\UserInterface\Domain\Factory\Int
 
 readonly class RenderUi
 {
-
     public function __construct(private UiFactory $uiFactory)
     {
     }

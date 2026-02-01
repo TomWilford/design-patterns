@@ -40,7 +40,7 @@ readonly class RuleFactoryResolver
     /**
      * @return class-string
      */
-    private function getRuleFactoryClassName($filterMethod): string
+    private function getRuleFactoryClassName(string $filterMethod): string
     {
         return match ($filterMethod) {
             'equals' => EqualsRuleFactory::class,
@@ -51,6 +51,10 @@ readonly class RuleFactoryResolver
     }
 
     /**
+     * @param array{
+     *     "filterProperty": string,
+     *     "filterValue": mixed
+     * } $filterInput
      * @param class-string $ruleFactoryClassName
      */
     private function instantiateFactory(string $ruleFactoryClassName, array $filterInput): RuleFactory
