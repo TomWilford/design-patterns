@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Creational\Builder\Conceptual\Module\Product\Domain\Entity\Enum;
 
 use Creational\Builder\Conceptual\Module\Product\Domain\Entity\Component\Colour;

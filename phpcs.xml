@@ -8,7 +8,9 @@
 
     <file>./creational</file>
 
-    <rule ref="PSR12"></rule>
+    <rule ref="PSR12"/>
+
+    <rule ref="Generic.PHP.RequireStrictTypes" value="1"/>
 
     <rule ref="Generic.Metrics.CyclomaticComplexity">
         <properties>

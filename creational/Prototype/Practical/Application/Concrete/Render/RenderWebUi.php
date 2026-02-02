@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Creational\Prototype\Practical\Application\Concrete\Render;
 
 use Creational\Prototype\Practical\Application\Interface\Render;

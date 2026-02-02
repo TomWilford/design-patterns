@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Creational\Prototype\Practical\Module\OutgoingLetter\Application\Action;
 
 use Creational\Prototype\Practical\Application\Interface\Render;

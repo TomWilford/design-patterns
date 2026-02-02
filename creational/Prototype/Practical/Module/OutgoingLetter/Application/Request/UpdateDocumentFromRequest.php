@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Creational\Prototype\Practical\Module\OutgoingLetter\Application\Request;
 
 use Creational\Prototype\Practical\Module\OutgoingLetter\Domain\Document\Document;
