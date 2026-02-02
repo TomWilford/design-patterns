@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Creational\Prototype\Conceptual\Module\Product\Domain;
 
 use Creational\Prototype\Conceptual\Application\Interface\Prototype;

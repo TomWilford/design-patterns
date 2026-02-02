@@ -1,9 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Creational\Builder\Practical\Module\Email\Application\Builder\Director;
 
 use Creational\Builder\Practical\Module\Email\Application\Builder\Interface\EmailBuilder;
-use Creational\Builder\Practical\Module\Email\Domain\Interface\EmailAttachmentInterface;
 use Creational\Builder\Practical\Module\Email\Domain\Interface\EmailAttachmentsInterface;
 use Creational\Builder\Practical\Module\Email\Domain\Interface\EmailBCCInterface;
 use Creational\Builder\Practical\Module\Email\Domain\Interface\EmailBodyInterface;

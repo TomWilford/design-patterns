@@ -1,8 +1,9 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Creational\Prototype\Practical\Module\OutgoingLetter\Infrastructure\Template;
 
-use Creational\Prototype\Practical\Application\Interface\Prototype;
 use Creational\Prototype\Practical\Module\OutgoingLetter\Domain\Document\Document;
 use Creational\Prototype\Practical\Module\OutgoingLetter\Domain\Template\DefaultTemplate;
 use RuntimeException;
