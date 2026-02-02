@@ -39,8 +39,14 @@
     "nyholm/psr7": "^1.8"
   },
   "scripts": {
+    "unit": "./vendor/bin/phpunit",
     "stan": "./vendor/bin/phpstan",
     "cs-scan": "./vendor/bin/phpcs",
-    "cs-fix": "./vendor/bin/phpcbf"
+    "cs-fix": "./vendor/bin/phpcbf",
+    "all-tests": [
+      "@unit",
+      "@stan",
+      "@cs-scan"
+    ]
   }
 }
